@@ -200,3 +200,4 @@ img { display: block; }
 @media (min-width: 700px) {
   .breed-title { font-size: 46px; }
 }
+.dog-ear { fill: rgba(0, 0, 0, 0.18); }
