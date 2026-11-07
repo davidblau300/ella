@@ -1,0 +1,51 @@
+{
+  "_note": "Centres whose activities are in the pool. Each field was read from the centre's page on tel-aviv.gov.il (pageUrl). `neighborhood` is only filled in when that page (or the centre's name) says it. `check` is a phrase the refresh script expects on the page; if it disappears, re-read the page.",
+  "1308": {
+    "nameHe": "מרכז קהילתי רמת אביב הירוקה",
+    "neighborhood": "רמת אביב",
+    "address": "חיים לבנון 37",
+    "phone": "073-3844235",
+    "pageUrl": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/RamatAviv.aspx",
+    "check": "רמת אביב הירוקה"
+  },
+  "1302": {
+    "nameHe": "מרכז קהילתי בית השחמט",
+    "neighborhood": "נווה אביבים",
+    "address": "טאגור 26 (גינת טאגור)",
+    "phone": "073-3844391",
+    "pageUrl": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/ChessCenter.aspx",
+    "check": "נווה אביבים"
+  },
+  "1104": {
+    "nameHe": "מרכז קהילתי צוקי אביב",
+    "neighborhood": "צוקי אביב",
+    "address": "שניצר 6",
+    "phone": "073-3844521",
+    "pageUrl": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/TsukeiAviv.aspx?IccID=209",
+    "check": "צוקי אביב"
+  },
+  "1304": {
+    "nameHe": "מרכז הספורט העירוני אביב אליאנס",
+    "neighborhood": "צפון-מערב העיר",
+    "address": "רדינג 26",
+    "phone": "03-7411292",
+    "pageUrl": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/SportAlliance.aspx",
+    "check": "אביב אליאנס"
+  },
+  "1107": {
+    "nameHe": "מרכז קהילתי הדר אפקה",
+    "neighborhood": "אפקה",
+    "address": "קהילת קייב 3",
+    "phone": "073-3844015",
+    "pageUrl": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/Afeka.aspx?IccID=178",
+    "check": "הדר אפקה"
+  },
+  "1305": {
+    "nameHe": "מרכז ספורט אלון (בתוך בית ספר אביב)",
+    "neighborhood": "רמת אביב החדשה",
+    "address": "שרגא פרידמן 4",
+    "phone": "073-3844346",
+    "pageUrl": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/sportalon.aspx",
+    "check": "רמת אביב החדשה"
+  }
+}

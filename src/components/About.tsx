@@ -5,7 +5,7 @@ export default function About({ breeds }: { breeds: Breed[] }) {
   return (
     <main className="about-page">
       <div className="top-bar">
-        <BackButton />
+        <BackButton fallback="#/dogs" />
       </div>
       <h1>מידע להורים</h1>
       <section className="card">
@@ -56,7 +56,7 @@ export default function About({ breeds }: { breeds: Breed[] }) {
       </p>
 
       <div className="bottom-back">
-        <BackButton />
+        <BackButton fallback="#/dogs" />
       </div>
     </main>
   )

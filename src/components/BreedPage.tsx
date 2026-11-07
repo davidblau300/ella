@@ -36,7 +36,7 @@ export default function BreedPage({ breed: b }: { breed: Breed }) {
   return (
     <main className="breed-page">
       <div className="top-bar">
-        <BackButton />
+        <BackButton fallback="#/dogs" />
       </div>
 
       <div className="breed-layout">
@@ -119,7 +119,7 @@ export default function BreedPage({ breed: b }: { breed: Breed }) {
       </div>
 
       <div className="bottom-back">
-        <BackButton />
+        <BackButton fallback="#/dogs" />
       </div>
     </main>
   )

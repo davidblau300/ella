@@ -1,4 +1,4 @@
-# Ella: dog breeds app
+# Ella: dog breeds and after-school activities app
 
 ## Git workflow (every session follows this)
 
@@ -17,8 +17,25 @@ sometimes on a computer.
 - Any text that speaks to the reader uses **feminine singular** ("חפשי", "נסי").
 - Simple words a 9-year-old reads easily. Plain Hebrew, **no nikud**.
 - Body text at least 18px, tap targets at least 48px.
-- At runtime: no external links, ads, analytics, cookies, sign-ups or network calls.
-  Nothing is stored about the user. The font (Rubik, `@fontsource/rubik`) is bundled locally.
+- At runtime: no ads, analytics, cookies, sign-ups or network calls. Kid-facing screens
+  have no external links; links (phone, websites, sources) exist only on the parents'
+  screen behind the parent gate. The font (Rubik, `@fontsource/rubik`) is bundled locally.
+- The only things stored are on the device (localStorage): her pinned activities
+  (`ella.activityPins.v1`, with a copy of each pinned activity) and the weekly rotation
+  state (`ella.activityRotation.v1`). Nothing leaves the device.
+
+## App structure
+
+- Home page (`#/`, also the PWA start URL): two big tiles, "כלבים" and "חוגים".
+  Every section has a way back home (home button / back buttons).
+- Dogs: `#/dogs` list, `#/breed/<id>` breed page, `#/about` photo credits (parents).
+- Activities: `#/activities` list, `#/activity/<id>` detail, `#/parents[/<id>]`
+  parents' screen behind `ParentGate` (multiply two numbers between 12 and 19; unlocked
+  until the app reloads).
+- Activities list: pinned (heart) activities first, never replaced; then 6 unpinned ones
+  from the pool, re-chosen every Sunday, preferring ones she hasn't seen recently
+  (`src/lib/rotation.ts`, pure and tested). A pinned activity that leaves the pool stays
+  visible from its saved copy and is marked "לא מופיע יותר ברשימות" on the parents' screen.
 
 ## Tablet, install and hosting
 
@@ -38,7 +55,18 @@ sometimes on a computer.
 - Kept out of search engines: `<meta name="robots" content="noindex, nofollow">`,
   `public/robots.txt` disallows everything, plus the `X-Robots-Tag` header.
 
-## Content rules
+## Activities content rules
+
+- Real activities in the Ramat Aviv area (Ramat Aviv, Ramat Aviv Gimel, Neve Avivim,
+  Afeka, Tzukei Aviv and nearby) whose **published** grades include 3rd or 4th grade.
+- Every entry comes from a source page that was actually read. Never invent an activity or
+  a detail; if days, times, grades or price aren't published, leave them out.
+- `nameHe` and `description` are short, kid-friendly Hebrew written by hand from the
+  source. Times, grades, prices and contact details come from the source via the script.
+- Municipal prices are shown as published in the municipal registration system, which
+  does not say whether they are monthly; don't add a period.
+
+## Content rules (dogs)
 
 - Facts come from sources and are never invented. Sources: Wikidata (breed list, Hebrew
   labels, origin, image), Hebrew Wikipedia, English Wikipedia where the Hebrew article
@@ -68,6 +96,13 @@ sometimes on a computer.
   file the images came from.
 - `scripts/batches/batch-NN.json`: which breeds are in the app (`qid` + `slug`).
 - `scripts/content/<slug>.json`: the hand-written Hebrew text and sourced numbers.
+- `src/data/activities.ts`: **generated** activities pool + `activitiesRefreshedOn`.
+- `scripts/activities/pool.json`: curated activities (hand-written Hebrew text + source
+  reference: municipal activity codes, or a page URL with phrases to re-check) and
+  `ignored` municipal codes with the reason they were left out.
+- `scripts/activities/centers.json`: the area's municipal centres (name, neighbourhood,
+  address, phone, page), read from each centre's page on tel-aviv.gov.il.
+- `scripts/build-activities.mjs`: refreshes the activities pool (see below).
 - `scripts/build-breeds.mjs`: fetches Wikidata/Wikipedia/Commons, makes the images and
   writes `src/data/breeds.ts`. Polite: one request at a time with a pause between
   requests (longer for the image host), a 30s timeout on every request,
@@ -79,13 +114,14 @@ sometimes on a computer.
 ```bash
 npm install
 npm run dev          # local dev server
-npm test             # Vitest: data checks + Hebrew search
+npm test             # Vitest: breed + activity data, search, rotation, pins, parent gate
 npm run build        # type-check + production build into dist/ + offline precache check (Vercel uses this)
 npm run data         # fetch sources/photos and regenerate src/data/breeds.ts
 npm run data -- candidates   # breeds with a Hebrew Wikipedia article not yet in a batch
 npm run data -- photos <slug>   # list free photos from the breed's articles, previews in scripts/.cache/photos/
 npm run data -- --refresh    # ignore the HTTP cache
 node scripts/make-icons.mjs  # re-render PWA icons from public/favicon.svg
+npm run activities           # refresh activities from their sources (see "Refresh activities")
 ```
 
 The data script needs network access to `query.wikidata.org`, `www.wikidata.org`,
@@ -134,3 +170,35 @@ an IP-wide 429 lasting 10 minutes.
    Commons photo (`photo`) and re-run. `npm run data -- photos <slug>` lists the freely
    licensed photos used in the breed's Hebrew and English articles, with previews.
 6. `npm test && npm run build`, then commit and push to `main`.
+
+## Refresh activities
+
+Run this every few months (or when asked) to keep the activities pool current.
+
+1. Network: the environment must allow `www.tel-aviv.gov.il` and `www.eretzmuseum.org.il`
+   (ask the user to add any new source's domain the same way).
+2. `npm run activities`. It:
+   - downloads the municipality's public activity list (the JSON behind
+     https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/CommunityClasses.aspx,
+     endpoint `TlvListUtils.svc/GetActivities/false/`) and fills in times, grades and
+     prices for every pool entry by its activity codes, keeping only groups for grades 3–4;
+   - re-checks each centre page in `centers.json` and each page source in `pool.json`
+     (museum page, youth-movement table) for its recorded phrases;
+   - **drops** entries whose codes or phrases are gone (they disappear from the pool; if she
+     pinned one, she still sees it and parents see "לא מופיע יותר ברשימות");
+   - prints **new candidates**: listed activities at the area's centres for grades 3–4
+     that are neither in the pool nor in `ignored`;
+   - writes `src/data/activities.ts` with today's date as `activitiesRefreshedOn` and
+     `checkedOn` on every entry.
+3. Codes change every school year (the municipal codes end in the year, e.g. `…2027…`).
+   For each new candidate: read its listing, then add it to `pool.json` (merge groups of
+   the same class into one entry, write `nameHe` + `description` from the published
+   details) or add the code to `ignored` with a reason (boys only, parent+child, special
+   programme, contradictory listing…).
+4. To add a non-municipal source (club, museum, youth movement…): read the page, add an
+   entry with `source.type: "page"`, its `url`, `check` phrases that prove the activity is
+   still listed, and `fields` copied from the page (place, neighbourhood if stated,
+   address, organizer, phone, website, grades, times, price).
+5. Keep the area to centres whose page (or name) places them in or next to Ramat Aviv;
+   aim for a pool of about 40.
+6. `npm test && npm run build`, look at `#/activities` and `#/parents`, then commit and push.

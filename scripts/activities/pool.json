@@ -1,0 +1,626 @@
+{
+  "_note": "Curated after-school activities for a 3rd-4th grader in the Ramat Aviv area. Text fields (nameHe, description) are written by hand from the source; times, grades, prices and contact details are filled in by scripts/build-activities.mjs from the source. See CLAUDE.md > Refresh activities.",
+  "activities": [
+    {
+      "id": "kol-echad-kochav",
+      "nameHe": "קול אחד כוכב: שירה, משחק וריקוד",
+      "category": "theater",
+      "description": "חוג לאמנויות הבמה: שרים, משחקים ורוקדים יחד.",
+      "place": "בית ספר אילנות",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202700880",
+          "RA17202700881"
+        ]
+      }
+    },
+    {
+      "id": "acrodance-ramat-aviv",
+      "nameHe": "אקרודאנס",
+      "category": "dance",
+      "description": "ריקוד שמשלב אקרובטיקה ומחול.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701464"
+        ]
+      }
+    },
+    {
+      "id": "ballet-ramat-aviv",
+      "nameHe": "בלט קלאסי",
+      "category": "dance",
+      "description": "שיעור מחול קלאסי בבית הספר למחול של המרכז הקהילתי. אפשר לבחור יום.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701468",
+          "RA17202701469"
+        ]
+      }
+    },
+    {
+      "id": "lyrical-ramat-aviv",
+      "nameHe": "ריקוד לירי",
+      "category": "dance",
+      "description": "ריקוד בסגנון ג'אז רך ומלא רגש.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701479"
+        ]
+      }
+    },
+    {
+      "id": "composition-ramat-aviv",
+      "nameHe": "קומפוזיציה במחול",
+      "category": "dance",
+      "description": "ממציאים ריקודים חדשים ובונים אותם צעד אחרי צעד.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701503"
+        ]
+      }
+    },
+    {
+      "id": "modern-ramat-aviv",
+      "nameHe": "מחול מודרני",
+      "category": "dance",
+      "description": "מחול עכשווי: תנועה חופשית ויצירתית.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701506"
+        ]
+      }
+    },
+    {
+      "id": "hiphop-ramat-aviv",
+      "nameHe": "היפ הופ",
+      "category": "dance",
+      "description": "שיעור ריקוד בקצב מהיר, ובעיקר הרבה כיף.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701527"
+        ]
+      }
+    },
+    {
+      "id": "dnd-ramat-aviv",
+      "nameHe": "מבוכים ודרקונים",
+      "category": "thinking",
+      "description": "משחק דמיון בעולם של פנטזיה, עם גיבורים וקוסמים. ממציאים סיפור ביחד ופותרים אתגרים כקבוצה.",
+      "place": "בית ספר אילנות",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA15202700829",
+          "RA15202700830"
+        ]
+      }
+    },
+    {
+      "id": "young-painting-studio",
+      "nameHe": "הסטודיו הצעיר לציור",
+      "category": "art",
+      "description": "חוג ציור לילדות ולילדים שכבר ציירו קצת. מכירים אמנות יפנית, ציור מופשט, ואן גוך ולאונרדו דה וינצ'י.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA17202701964"
+        ]
+      }
+    },
+    {
+      "id": "jungle-vet",
+      "nameHe": "וטרינר קסם הג'ונגל",
+      "category": "animals",
+      "description": "לומדים לאהוב בעלי חיים ולטפל בהם, ומתנסים בעבודה עם חיות.",
+      "source": {
+        "type": "tlv",
+        "institute": "1308",
+        "codes": [
+          "RA15202701974"
+        ]
+      }
+    },
+    {
+      "id": "chess-beginners",
+      "nameHe": "שחמט למתחילות ולמתחילים",
+      "category": "thinking",
+      "description": "חוג שחמט למי שכבר מכירה קצת את המשחק, או למדה עד שנה. לפני ההרשמה מתאמים את הקבוצה עם רכז השחמט.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH15202701343",
+          "CH15202701345"
+        ]
+      }
+    },
+    {
+      "id": "chess-second-year",
+      "nameHe": "שחמט: שנה שנייה ושלישית",
+      "category": "thinking",
+      "description": "לילדות ולילדים שלמדו שחמט לפחות שנה. ממשיכים ללמוד מהלכים ותרגילים חדשים.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH15202701369"
+        ]
+      }
+    },
+    {
+      "id": "chess-advanced",
+      "nameHe": "שחמט למתקדמות ולמתקדמים",
+      "category": "thinking",
+      "description": "למי שלמדה שחמט לפחות שנתיים. יש גם קבוצה שמיועדת במיוחד לבנות.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH15202701370",
+          "CH15202701371",
+          "CH15202701372",
+          "CH15202701373"
+        ]
+      }
+    },
+    {
+      "id": "chess-teams",
+      "nameHe": "נבחרות השחמט",
+      "category": "thinking",
+      "description": "קבוצות של בנות ובנים שמתחרים בתחרויות שחמט ארציות. מצטרפים אחרי התאמה עם המדריכים.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH15202701376",
+          "CH15202701404",
+          "CH15202701405",
+          "CH15202701406"
+        ]
+      }
+    },
+    {
+      "id": "theater-chess-house",
+      "nameHe": "תיאטרון",
+      "category": "theater",
+      "description": "מגלים את עולם המשחק: משחקי אלתור, תנועה, סצנות ומונולוגים, קומדיה ודרמה, ומוצאים את הקול המיוחד של כל אחת ואחד.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH17202701492",
+          "CH17202701495"
+        ]
+      }
+    },
+    {
+      "id": "piano-chess-house",
+      "nameHe": "שיעור פסנתר",
+      "category": "music",
+      "description": "שיעור פסנתר אישי עם מורה. אפשר לבחור שיעור של חצי שעה, 45 דקות או שעה. את היום והשעה מתאמים עם רכזת החוגים.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH17202701861",
+          "CH17202701862",
+          "CH17202701863",
+          "CH17202701864",
+          "CH17202701865",
+          "CH17202701867",
+          "CH17202701713",
+          "CH17202701715",
+          "CH17202701718",
+          "CH17202701721",
+          "CH17202701722",
+          "CH17202701723"
+        ]
+      }
+    },
+    {
+      "id": "guitar-chess-house",
+      "nameHe": "שיעור גיטרה",
+      "category": "music",
+      "description": "שיעור גיטרה אישי: קלאסי, ג'אז ומוזיקה לטינית. אפשר לבחור שיעור של חצי שעה, 45 דקות או שעה.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH17202701705",
+          "CH17202701706",
+          "CH17202701707",
+          "CH17202701708"
+        ]
+      }
+    },
+    {
+      "id": "art-chess-house",
+      "nameHe": "אמנות",
+      "category": "art",
+      "description": "לומדים ליצור ולצייר, ומקבלים השראה מיצירות אמנות מהארץ ומהעולם. החומרים כלולים.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH17202701883"
+        ]
+      }
+    },
+    {
+      "id": "robotics-chess-house",
+      "nameHe": "רובוטיקה",
+      "category": "science",
+      "description": "בונים רובוטים, לומדים אלקטרוניקה, מתכננים חלקים במדפסת תלת־ממד ומנסים מציאות מדומה.",
+      "source": {
+        "type": "tlv",
+        "institute": "1302",
+        "codes": [
+          "CH15202701072",
+          "CH15202701073",
+          "CH15202701074"
+        ]
+      }
+    },
+    {
+      "id": "judo-tsukei-aviv",
+      "nameHe": "ג'ודו",
+      "category": "martial",
+      "description": "חוג ג'ודו עם מאמן שהיה בנבחרת ישראל.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702171"
+        ]
+      }
+    },
+    {
+      "id": "floor-gymnastics-tsukei-aviv",
+      "nameHe": "התעמלות קרקע",
+      "category": "gymnastics",
+      "description": "התעמלות קרקע בהנהלת מכבי דן, עם מאמנת שזכתה במקום שלישי באליפות העולם.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702186"
+        ]
+      }
+    },
+    {
+      "id": "young-engineers",
+      "nameHe": "מהנדסי הדור הבא",
+      "category": "science",
+      "description": "בונים ומרכיבים מודלים בעזרת ערכות מיוחדות. משלבים מדע, הנדסה, רובוטיקה, יצירה וחשבון.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA15202702201"
+        ]
+      }
+    },
+    {
+      "id": "basketball-tsukei-aviv",
+      "nameHe": "כדורסל לבנות ולבנים",
+      "category": "sport",
+      "description": "חוג כדורסל של הפועל תל אביב לבנות ולבנים. אפשר להגיע פעם או פעמיים בשבוע.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702559",
+          "ZA16202702564",
+          "ZA16202702569"
+        ]
+      }
+    },
+    {
+      "id": "parkour-tsukei-aviv",
+      "nameHe": "פארקור",
+      "category": "gymnastics",
+      "description": "לומדים לקפוץ, לטפס ולעבור מכשולים בזריזות, עם מאמן מוסמך.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702118"
+        ]
+      }
+    },
+    {
+      "id": "football-tsukei-aviv",
+      "nameHe": "כדורגל",
+      "category": "sport",
+      "description": "משחקי כדורגל עם מאמן מוסמך.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702509"
+        ]
+      }
+    },
+    {
+      "id": "rhythmic-tsukei-aviv",
+      "nameHe": "התעמלות אמנותית",
+      "category": "gymnastics",
+      "description": "חוג התעמלות אמנותית בצוקי אביב.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702520",
+          "ZA16202702525"
+        ]
+      }
+    },
+    {
+      "id": "rollerspeed",
+      "nameHe": "רולרספיד: החלקה על גלגיליות",
+      "category": "sport",
+      "description": "לומדים להחליק על רולרבליידס או גלגיליות: עצירות, סיבובים וסלאלום, באווירה ספורטיבית ומלאה באנרגיה.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702535"
+        ]
+      }
+    },
+    {
+      "id": "capoeira-tsukei-aviv",
+      "nameHe": "קפוארה",
+      "category": "martial",
+      "description": "קפוארה: אמנות לחימה שנראית כמו ריקוד, עם מוזיקה וקצב.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA16202702538",
+          "ZA16202702541"
+        ]
+      }
+    },
+    {
+      "id": "vet-tsukei-aviv",
+      "nameHe": "וטרינריה ובעלי חיים",
+      "category": "animals",
+      "description": "חוג מעשי עם וטרינר: פוגשים בעלי חיים, ומתרגלים על מודלים צילום רנטגן, גבס ומתן תרופות. יש גם חידונים עם פרסים.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA15202702557"
+        ]
+      }
+    },
+    {
+      "id": "theater-tsukei-aviv",
+      "nameHe": "תיאטרון ילדים",
+      "category": "theater",
+      "description": "נכנסים לעולם של דמיון: משחקי תיאטרון, אלתור, תנועה, דמויות וסיפורים, בקבוצה בטוחה וכיפית.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA17202702838",
+          "ZA17202702841"
+        ]
+      }
+    },
+    {
+      "id": "hiphop-tsukei-aviv",
+      "nameHe": "היפ הופ וטכניקה",
+      "category": "dance",
+      "description": "קצב, אנרגיה וסטייל: ריקוד היפ הופ עם מורה מנוסה.",
+      "source": {
+        "type": "tlv",
+        "institute": "1104",
+        "codes": [
+          "ZA17202702870"
+        ]
+      }
+    },
+    {
+      "id": "rhythmic-alliance",
+      "nameHe": "התעמלות אמנותית עם אביזרים",
+      "category": "gymnastics",
+      "description": "התעמלות, אקרובטיקה ומחול עם חבל, חישוק, כדור, אלות וסרט.",
+      "source": {
+        "type": "tlv",
+        "institute": "1304",
+        "codes": [
+          "EL16202702855",
+          "EL16202702859"
+        ]
+      }
+    },
+    {
+      "id": "basketball-alliance",
+      "nameHe": "כדורסל באביב אליאנס",
+      "category": "sport",
+      "description": "לומדים את יסודות הכדורסל ושליטה בכדור, ובעיקר נהנים להיות חלק מקבוצה.",
+      "source": {
+        "type": "tlv",
+        "institute": "1304",
+        "codes": [
+          "EL16202702866",
+          "EL16202702868"
+        ]
+      }
+    },
+    {
+      "id": "basketball-afeka",
+      "nameHe": "כדורסל בהדר אפקה",
+      "category": "sport",
+      "description": "משפרים את הכדורסל ועובדים בקבוצה, עם תחרויות ומשחקים כיפיים.",
+      "source": {
+        "type": "tlv",
+        "institute": "1107",
+        "codes": [
+          "HF16202701455"
+        ]
+      }
+    },
+    {
+      "id": "taekwondo-afeka",
+      "nameHe": "טאקוונדו",
+      "category": "martial",
+      "description": "אמנות לחימה וספורט אולימפי: לומדים בעיטות והגנה עצמית, וגם שליטה עצמית.",
+      "source": {
+        "type": "tlv",
+        "institute": "1107",
+        "codes": [
+          "HF16202701683"
+        ]
+      }
+    },
+    {
+      "id": "girls-football-alon",
+      "nameHe": "כדורגל לבנות",
+      "category": "sport",
+      "description": "קבוצת כדורגל רק לבנות.",
+      "source": {
+        "type": "tlv",
+        "institute": "1305",
+        "codes": [
+          "SA16202700585"
+        ]
+      }
+    },
+    {
+      "id": "girls-basketball-alon",
+      "nameHe": "כדורסל לבנות",
+      "category": "sport",
+      "description": "קבוצת כדורסל לבנות בשיתוף הפועל תל אביב, פעמיים בשבוע.",
+      "source": {
+        "type": "tlv",
+        "institute": "1305",
+        "codes": [
+          "SA16202700589",
+          "SA16202700590"
+        ]
+      }
+    },
+    {
+      "id": "football-alon",
+      "nameHe": "כדורגל במרכז ספורט אלון",
+      "category": "sport",
+      "description": "חוג כדורגל פעם בשבוע. יש קבוצה לכיתה ג' וקבוצה לכיתה ד'.",
+      "source": {
+        "type": "tlv",
+        "institute": "1305",
+        "codes": [
+          "SA16202700453",
+          "SA16202700454"
+        ]
+      }
+    },
+    {
+      "id": "astronomy-museum",
+      "nameHe": "כוכבים במוז\"א: אסטרונומיה",
+      "category": "science",
+      "description": "לומדים על כדור הארץ, הירח, מערכת השמש והכוכבים. מסתכלים בטלסקופ, צופים במופעים בפלנטריום ובונים מודלים.",
+      "source": {
+        "type": "page",
+        "url": "https://www.eretzmuseum.org.il/features/%d7%9b%d7%95%d7%9b%d7%91%d7%99%d7%9d-%d7%91%d7%9e%d7%95%d7%96%d7%90/",
+        "check": [
+          "כיתות ג-ד",
+          "16:30"
+        ],
+        "fields": {
+          "placeHe": "מוזיאון ארץ ישראל (מוז\"א)",
+          "neighborhood": "רמת אביב",
+          "address": "חיים לבנון 2",
+          "organizer": "מוזיאון ארץ ישראל, אגף החינוך, עם \"עולם האסטרונומיה\"",
+          "phone": "03-7455710",
+          "website": "https://www.eretzmuseum.org.il/features/%d7%9b%d7%95%d7%9b%d7%91%d7%99%d7%9d-%d7%91%d7%9e%d7%95%d7%96%d7%90/",
+          "grades": [
+            "כיתה ג'",
+            "כיתה ד'"
+          ],
+          "times": [
+            {
+              "text": "יום ה' 16:30–17:30",
+              "grades": "כיתות ג'–ד'"
+            }
+          ],
+          "price": "2,300 ש\"ח לשנה (26 מפגשים), ועוד 225 ש\"ח לחומרים"
+        }
+      }
+    },
+    {
+      "id": "scouts-ramat-aviv-gimel",
+      "nameHe": "צופים: שבט רמת אביב ג'",
+      "category": "youth",
+      "description": "תנועת נוער: מפגשים, טיולים, מחנות ופעילות עם חברות וחברים. מצטרפים מכיתה ד'.",
+      "source": {
+        "type": "tlvTable",
+        "url": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/YouthMovements.aspx",
+        "row": "שבט צופים רמת אביב ג",
+        "check": [
+          "פיינשטיין מאיר 85"
+        ],
+        "fields": {
+          "placeHe": "שבט הצופים רמת אביב ג'",
+          "neighborhood": "רמת אביב ג'",
+          "address": "פיינשטיין 85",
+          "organizer": "צופי תל אביב-יפו",
+          "phone": "054-2440929",
+          "website": "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/YouthMovements.aspx",
+          "grades": [
+            "כיתה ד'"
+          ],
+          "gradesNote": "תנועות הנוער בעיר פועלות בכיתות ד'–י\"ב"
+        }
+      }
+    }
+  ],
+  "ignored": [
+    {
+      "code": "SA16202700447",
+      "reason": "כדורסל בנים בלבד"
+    },
+    {
+      "code": "RA16202700884",
+      "reason": "תוכנית לילדים עם צרכים מיוחדים"
+    },
+    {
+      "code": "CH15202701348",
+      "reason": "שחמט הורה+ילד"
+    },
+    {
+      "code": "CH15202701349",
+      "reason": "שחמט הורה+ילד"
+    },
+    {
+      "code": "CH15202701409",
+      "reason": "נבחרת לדירוג 1600 ומעלה"
+    },
+    {
+      "code": "RA17202701535",
+      "reason": "הכנה לתחרויות סולו"
+    },
+    {
+      "code": "ZA17202702101",
+      "reason": "סתירה בפרסום: הרשימה אומרת כיתות ג' ומעלה ביום ג' 18:15, התיאור אומר כיתות א'-ב' ב-16:00"
+    }
+  ]
+}

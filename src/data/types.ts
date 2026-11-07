@@ -28,3 +28,33 @@ export interface Breed {
   /** Articles and items the facts were taken from */
   sources: string[]
 }
+
+export type ActivityCategory =
+  | 'sport' | 'dance' | 'music' | 'art' | 'theater' | 'thinking'
+  | 'science' | 'animals' | 'martial' | 'gymnastics' | 'youth'
+
+export interface Activity {
+  id: string
+  nameHe: string
+  category: ActivityCategory
+  /** short kid-friendly Hebrew description, written by hand from the source */
+  description: string
+  /** where it takes place */
+  place: string
+  neighborhood?: string
+  address?: string
+  /** published grades, e.g. "כיתות ג'–ד'" */
+  grades: string
+  gradesNote?: string
+  /** published days and times, each with the grades of that group */
+  times: { text: string; grades?: string }[]
+  // ---- parent details (shown only behind the parent gate) ----
+  organizer: string
+  phone?: string
+  website?: string
+  price?: string
+  sourceUrl: string
+  sourceRef?: string
+  /** YYYY-MM-DD the source was last read */
+  checkedOn: string
+}

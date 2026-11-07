@@ -6,7 +6,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
 export const USER_AGENT =
-  'EllaDogBreeds/1.0 (offline Hebrew dog-breeds app for kids; build-time data script; Node.js fetch)'
+  'EllaKidsApp/1.0 (offline Hebrew app for kids; build-time data script; Node.js fetch)'
 
 const CACHE_DIR = path.resolve(import.meta.dirname, '..', '.cache')
 // pause between requests to the same host; the image host rate-limits hard
@@ -103,4 +103,20 @@ export async function getBinary(url, { refresh = false } = {}) {
   await mkdir(CACHE_DIR, { recursive: true })
   await writeFile(file, buf)
   return buf
+}
+
+/** Fetch text (GET, or POST with a raw body) with caching; `refresh` bypasses the cache. */
+export async function getText(url, { refresh = false, body, headers = {} } = {}) {
+  const file = cacheFile(url + (body ? '\n' + body : ''), 'txt')
+  if (!refresh) {
+    try {
+      return await readFile(file, 'utf8')
+    } catch {
+      /* not cached */
+    }
+  }
+  const text = await request(url, body ? { method: 'POST', body, headers } : { headers })
+  await mkdir(CACHE_DIR, { recursive: true })
+  await writeFile(file, text)
+  return text
 }

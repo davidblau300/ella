@@ -1,6 +1,7 @@
 import type { Breed } from '../data/types'
 import { filterByName } from '../lib/search'
 import { asset, navigate } from '../lib/route'
+import { HomeButton } from './BackButton'
 
 interface Props {
   breeds: Breed[]
@@ -16,6 +17,9 @@ export default function BreedList({ breeds, query, onQuery, onLeave }: Props) {
   return (
     <main className="list-page">
       <header className="list-header">
+        <div className="header-row">
+          <HomeButton />
+        </div>
         <h1>
           <span aria-hidden="true">🐾 </span>גזעי כלבים
         </h1>
