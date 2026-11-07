@@ -4,6 +4,7 @@ import { pinnedViews } from '../lib/pins'
 import { CATEGORIES } from '../lib/categories'
 import BackButton from './BackButton'
 import { ltrTimes } from '../lib/format'
+import { BUILD_TIME, formatBuildTime } from '../lib/build'
 
 const formatDate = (iso: string) => {
   const [y, m, d] = iso.split('-')
@@ -59,6 +60,10 @@ export default function ParentsPage({ pool, pins, refreshedOn, focusId }: Props)
       <h1>מידע להורים: חוגים</h1>
       <section className="card">
         <p><strong>הרשימה עודכנה לאחרונה: {formatDate(refreshedOn)}</strong></p>
+        <p data-testid="build-time">
+          גרסת האפליקציה: נבנתה ב־<span dir="ltr">{formatBuildTime(BUILD_TIME)}</span> (שעון ישראל).
+          גרסה חדשה יורדת לבד ברקע, ונכנסת לשימוש בפעם הבאה שהאפליקציה נפתחת, או מיד כשנמצאים בדף הבית.
+        </p>
         <p>
           החוגים נאספו מדפים שפורסמו: מערכת החוגים של עיריית תל אביב-יפו (מרכזים קהילתיים ומרכזי ספורט
           באזור רמת אביב), דף תנועות הנוער של העירייה, ואתר מוזיאון ארץ ישראל. נשארו רק חוגים שהכיתות שפורסמו

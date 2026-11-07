@@ -5,11 +5,17 @@ import { VitePWA } from 'vite-plugin-pwa'
 const ANY_SIZES = [48, 72, 96, 128, 144, 192, 256, 384, 512]
 
 export default defineConfig({
+  define: {
+    // shown on the parents' screen so a parent can see which version the tablet runs
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
-      injectRegister: 'script',
+      // 'prompt': a new version downloads in the background and waits; src/pwa.ts decides
+      // when to switch (home page, or the next time the app opens / comes back).
+      registerType: 'prompt',
+      injectRegister: false,
       manifest: {
         id: '/',
         name: 'Ella',

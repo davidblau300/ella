@@ -49,6 +49,12 @@ sometimes on a computer.
 - Fully offline after the first open: the service worker precaches the app shell,
   fonts, icons and every breed photo and thumbnail. `npm run build` ends with
   `scripts/check-precache.mjs`, which fails the build if any photo is not precached.
+- Automatic updates (`src/pwa.ts`, `src/lib/updatePolicy.ts`): the service worker is in
+  `prompt` mode. A new deploy downloads fully in the background (checked on open, every
+  hour, and whenever the app returns to the foreground). It switches (reload, same screen)
+  right away on the home page, otherwise the next time the app opens or comes back from the
+  background, or when she goes home. Never reload mid-screen. The build date and time
+  (`__BUILD_TIME__`, Israel time) is shown on the parents' screen.
 - Hosting: Vercel, deploying from `main` (`vercel.json`: Vite build to `dist/`, an
   index.html fallback rewrite, no-cache headers for the service worker,
   `X-Robots-Tag: noindex`). Routing is hash-based (`#/breed/<id>`, `#/about`).
