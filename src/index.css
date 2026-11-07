@@ -201,3 +201,38 @@ img { display: block; }
   .breed-title { font-size: 46px; }
 }
 .dog-ear { fill: rgba(0, 0, 0, 0.18); }
+
+/* ---------------------------------------------------------------- tablets */
+/* tablet portrait: one wide column with bigger rows */
+@media (min-width: 700px) {
+  main { padding-inline: 24px; }
+  .breed-row { min-height: 108px; }
+  .breed-row img { width: 88px; height: 88px; }
+  .breed-name { font-size: 26px; }
+}
+
+/* landscape tablets and computers: breeds in two columns (three when there is room) */
+@media (min-width: 700px) and (orientation: landscape) {
+  .list-page { max-width: 1180px; }
+  .breed-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .search { max-width: 640px; }
+}
+@media (min-width: 1300px) and (orientation: landscape) {
+  .list-page { max-width: 1400px; }
+  .breed-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* wide screens: breed page in two columns, photo beside the facts */
+@media (min-width: 900px) and (orientation: landscape) {
+  .breed-page { max-width: 1240px; }
+  .breed-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 28px;
+    align-items: start;
+  }
+  .breed-side { position: sticky; top: calc(84px + env(safe-area-inset-top)); }
+  .hero img { max-height: calc(100vh - 260px); }
+  .breed-main > .card:first-child, .breed-main > .numbers:first-child { margin-top: 0; }
+  .about-page { max-width: 900px; }
+}

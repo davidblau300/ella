@@ -20,6 +20,24 @@ sometimes on a computer.
 - At runtime: no external links, ads, analytics, cookies, sign-ups or network calls.
   Nothing is stored about the user. The font (Rubik, `@fontsource/rubik`) is bundled locally.
 
+## Tablet, install and hosting
+
+- Main device: a tablet, in portrait and landscape (also phones and computers).
+  Landscape tablets show breeds in two columns (three on wide screens) and the breed
+  page side by side (photo + facts). Check both orientations after layout changes.
+- Installable PWA: manifest name "Ella", `display: standalone`, `orientation: any`.
+  Icons in `public/icons/` (Android/manifest 48–512, maskable 192/512, Apple touch
+  120/152/167/180) plus `public/apple-touch-icon.png`, all rendered from
+  `public/favicon.svg` by `node scripts/make-icons.mjs`.
+- Fully offline after the first open: the service worker precaches the app shell,
+  fonts, icons and every breed photo and thumbnail. `npm run build` ends with
+  `scripts/check-precache.mjs`, which fails the build if any photo is not precached.
+- Hosting: Vercel, deploying from `main` (`vercel.json`: Vite build to `dist/`, an
+  index.html fallback rewrite, no-cache headers for the service worker,
+  `X-Robots-Tag: noindex`). Routing is hash-based (`#/breed/<id>`, `#/about`).
+- Kept out of search engines: `<meta name="robots" content="noindex, nofollow">`,
+  `public/robots.txt` disallows everything, plus the `X-Robots-Tag` header.
+
 ## Content rules
 
 - Facts come from sources and are never invented. Sources: Wikidata (breed list, Hebrew
@@ -62,7 +80,7 @@ sometimes on a computer.
 npm install
 npm run dev          # local dev server
 npm test             # Vitest: data checks + Hebrew search
-npm run build        # type-check + production build into dist/ (Vercel uses this)
+npm run build        # type-check + production build into dist/ + offline precache check (Vercel uses this)
 npm run data         # fetch sources/photos and regenerate src/data/breeds.ts
 npm run data -- candidates   # breeds with a Hebrew Wikipedia article not yet in a batch
 npm run data -- photos <slug>   # list free photos from the breed's articles, previews in scripts/.cache/photos/

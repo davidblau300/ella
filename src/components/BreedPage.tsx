@@ -39,6 +39,8 @@ export default function BreedPage({ breed: b }: { breed: Breed }) {
         <BackButton />
       </div>
 
+      <div className="breed-layout">
+      <div className="breed-side">
       <div className="hero">
         <img src={asset(b.photo.large)} alt={`כלב מגזע ${b.nameHe}`} width={b.photo.width} height={b.photo.height} />
       </div>
@@ -57,6 +59,9 @@ export default function BreedPage({ breed: b }: { breed: Breed }) {
         </p>
       )}
 
+      </div>
+
+      <div className="breed-main">
       {b.size && (
         <Section title="גודל" icon="🐕">
           <SizeScale size={b.size} />
@@ -109,6 +114,9 @@ export default function BreedPage({ breed: b }: { breed: Breed }) {
           </ul>
         </Section>
       )}
+
+      </div>
+      </div>
 
       <div className="bottom-back">
         <BackButton />
