@@ -2,4 +2,1611 @@
 // Edit scripts/content/<id>.json or scripts/batches/*.json and run `npm run data`.
 import type { Breed } from './types'
 
-export const breeds: Breed[] = []
+export const breeds: Breed[] = [
+  {
+    "id": "akita",
+    "qid": "Q29164",
+    "nameHe": "אקיטה",
+    "nameEn": "Akita",
+    "origin": [
+      {
+        "nameHe": "יפן",
+        "flag": "🇯🇵"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      58,
+      71
+    ],
+    "lifeYears": [
+      11,
+      11
+    ],
+    "coat": "פרווה כפולה וצפופה מאוד. בדרך כלל היא קצרה, אבל יש גם אקיטות עם פרווה ארוכה ורכה.",
+    "colors": "אדום-חום, \"שומשום\" (אדום עם קצוות שחורים), מנומר או לבן. בכל הצבעים חוץ מהלבן, יש פרווה בהירה יותר על הלחיים, הצוואר, הבטן והצד הפנימי של הרגליים.",
+    "temperament": "גדול, חזק ועצמאי. הוא שומר על הבית שלו, ובדרך כלל מסויג כלפי אנשים זרים. אומרים שהוא מתנהג קצת כמו חתול: הוא מנקה את הפנים אחרי האוכל, והוא בררן. הוא ידידותי לילדים וסבלני כשהם משחקים איתו, אבל לא תמיד מסתדר עם כלבים אחרים.",
+    "kids": 4,
+    "history": "האקיטה בא מההרים של צפון יפן. האבות שלו עזרו לציידים למצוא דובים וחזירי בר בשלג, וגם שמרו על נזירים בדרכים. בשנת 1931 הכריזה יפן על האקיטה כעל \"נכס לאומי\".",
+    "funFacts": [
+      "אקיטה בשם האצ'יקו ליווה כל יום את הבעלים שלו לתחנת הרכבת בטוקיו. גם אחרי שהבעלים כבר לא חזר, האצ'יקו המשיך לחכות לו שם במשך שנים. בתחנה עומד פסל לכבודו, והוא סמל לנאמנות.",
+      "הזנב של האקיטה מתגלגל מעל הגב, והאוזניים הקטנות שלו מכוונות קדימה.",
+      "הלן קלר, הסופרת המפורסמת, קיבלה מממשלת יפן שני כלבי אקיטה במתנה, ובזכותה הגזע הגיע לאמריקה."
+    ],
+    "photo": {
+      "large": "dogs/akita.webp",
+      "thumb": "dogs/akita-thumb.webp",
+      "width": 1000,
+      "height": 665
+    },
+    "credit": {
+      "file": "Akita inu criado por Tsutsui Kennel.jpg",
+      "author": "TsutsuiKennel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akita_inu_criado_por_Tsutsui_Kennel.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%90%D7%A7%D7%99%D7%98%D7%94_(%D7%9B%D7%9C%D7%91)",
+      "https://en.wikipedia.org/wiki/Akita_(dog_breed)",
+      "https://www.wikidata.org/wiki/Q29164"
+    ]
+  },
+  {
+    "id": "bulldog",
+    "qid": "Q38383",
+    "nameHe": "בולדוג אנגלי",
+    "nameEn": "Bulldog",
+    "origin": [
+      {
+        "nameHe": "הממלכה המאוחדת",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "weightKg": [
+      23,
+      25
+    ],
+    "lifeYears": [
+      10,
+      10
+    ],
+    "coat": "פרווה קצרה, חלקה ומבריקה. יש לו קפלי עור עבים על המצח ועל הכתפיים.",
+    "colors": "אדום, חום-צהבהב, לבן, מפוספס, או לבן עם כתמים.",
+    "temperament": "רגוע, טוב לב ואמיץ, אבל לא תוקפני. הוא מתנהג בשקט ובכבוד, ומסתדר טוב מאוד עם ילדים, עם כלבים אחרים ועם חיות מחמד אחרות.",
+    "kids": 5,
+    "history": "הבולדוג הוא כלב מאנגליה, והשם שלו מופיע כבר במכתב משנת 1631. בעבר השתמשו בכלבים כאלה במשחק אכזרי נגד שוורים. בשנת 1835 אסרו את זה בחוק, ומאז מגדלים את הבולדוג ככלב משפחה רגוע.",
+    "funFacts": [
+      "ג'ון בול, דמות מצוירת שמסמלת את אנגליה, מופיע בדרך כלל עם כלב בולדוג.",
+      "הלסת התחתונה שלו בולטת קדימה, יותר מהלסת העליונה.",
+      "בגלל הפנים השטוחות שלו, קשה לו לסבול חום."
+    ],
+    "photo": {
+      "large": "dogs/bulldog.webp",
+      "thumb": "dogs/bulldog-thumb.webp",
+      "width": 1000,
+      "height": 666
+    },
+    "credit": {
+      "file": "Racibórz 2007 082.jpg",
+      "author": "Pleple2000",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Racib%C3%B3rz_2007_082.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%9C%D7%93%D7%95%D7%92_%D7%90%D7%A0%D7%92%D7%9C%D7%99",
+      "https://en.wikipedia.org/wiki/Bulldog",
+      "https://www.wikidata.org/wiki/Q38383"
+    ]
+  },
+  {
+    "id": "french-bulldog",
+    "qid": "Q29149",
+    "nameHe": "בולדוג צרפתי",
+    "nameEn": "French Bulldog",
+    "origin": [
+      {
+        "nameHe": "צרפת",
+        "flag": "🇫🇷"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      24,
+      35
+    ],
+    "weightKg": [
+      8,
+      14
+    ],
+    "lifeYears": [
+      10,
+      10
+    ],
+    "coat": "פרווה קצרה, דקה ומשיית. העור שלו רך ורפוי, ויוצר קמטים.",
+    "colors": "מנומר בגוונים שונים, חום-צהבהב, קרם, או לבן עם כתמים מנומרים.",
+    "history": "הבולדוג הצרפתי הופיע בפריז באמצע המאה ה-19. עובדות תחרה מאנגליה עברו לגור בצרפת, והביאו איתן בולדוגים קטנים. בצרפת הכלבים האלה עזרו לתפוס חולדות והיו בני משפחה נאמנים, והם נעשו אהובים מאוד. היום מגדלים אותם בעיקר ככלבי מחמד.",
+    "funFacts": [
+      "יש לו אוזניים זקופות שנראות כמו אוזניים של עטלף.",
+      "בהתחלה, מגדלים באנגליה שלחו לצרפת בולדוגים שנחשבו אצלם קטנים מדי, או כאלה שהאוזניים שלהם עמדו זקופות.",
+      "הוא אחד הכלבים הנפוצים ביותר היום באנגליה, בארצות הברית ובאוסטרליה."
+    ],
+    "photo": {
+      "large": "dogs/french-bulldog.webp",
+      "thumb": "dogs/french-bulldog-thumb.webp",
+      "width": 1000,
+      "height": 666
+    },
+    "credit": {
+      "file": "Французские бульдоги 2013-09-02 11-36.JPG",
+      "author": "User:Frosya a",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B5_%D0%B1%D1%83%D0%BB%D1%8C%D0%B4%D0%BE%D0%B3%D0%B8_2013-09-02_11-36.JPG"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%9C%D7%93%D7%95%D7%92_%D7%A6%D7%A8%D7%A4%D7%AA%D7%99",
+      "https://en.wikipedia.org/wiki/French_Bulldog",
+      "https://www.wikidata.org/wiki/Q29149"
+    ]
+  },
+  {
+    "id": "boxer",
+    "qid": "Q38496",
+    "nameHe": "בוקסר",
+    "nameEn": "Boxer",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      53,
+      63
+    ],
+    "weightKg": [
+      25,
+      32
+    ],
+    "lifeYears": [
+      9,
+      11
+    ],
+    "coat": "פרווה קצרה, חלקה ומבריקה, שצמודה לגוף.",
+    "colors": "חום בגוונים שונים, מצהבהב ועד אדמדם, או מנומר: פסים שחורים על רקע חום. להרבה בוקסרים יש כתמים לבנים על הבטן, על הרגליים ולפעמים על הצוואר והפנים.",
+    "temperament": "שמח, חכם, שובב ומלא אנרגיה. הוא טוב מאוד עם ילדים, סבלני ומשחק איתם, וגם שומר עליהם. הוא צריך הרבה פעילות, אחרת הוא משתעמם ומתחיל ללעוס ולחפור. הוא לומד הכי טוב כשמלמדים אותו עם פרסים ומחמאות.",
+    "energy": 4,
+    "kids": 5,
+    "history": "הבוקסר פותח בגרמניה בסוף המאה ה-19. האבות שלו היו כלבי ציד חזקים ובולדוגים. בשנת 1894 החליטו שלושה גרמנים לפתח ממנו כלב חכם, חזק וזריז, ובשנת 1895 הוצגו בוקסרים לראשונה בתערוכת כלבים במינכן.",
+    "funFacts": [
+      "אין בוקסרים שחורים לגמרי, כי אין בגזע הזה גן לפרווה שחורה.",
+      "בערך אחד מכל ארבעה או חמישה בוקסרים נולד לבן, או כמעט לבן.",
+      "בוקסרים עובדים גם ככלבי נחייה לעיוורים, ככלבי טיפול וככלבי משטרה."
+    ],
+    "photo": {
+      "large": "dogs/boxer.webp",
+      "thumb": "dogs/boxer-thumb.webp",
+      "width": 500,
+      "height": 408
+    },
+    "credit": {
+      "file": "Boxer female brown.jpg",
+      "author": "Flickr user boxercab",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boxer_female_brown.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A7%D7%A1%D7%A8_(%D7%9B%D7%9C%D7%91)",
+      "https://en.wikipedia.org/wiki/Boxer_(dog_breed)",
+      "https://www.wikidata.org/wiki/Q38496"
+    ]
+  },
+  {
+    "id": "border-collie",
+    "qid": "Q37710",
+    "nameHe": "בורדר קולי",
+    "nameEn": "border collie",
+    "origin": [
+      {
+        "nameHe": "הגבול בין אנגליה לסקוטלנד",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "lifeYears": [
+      12,
+      13
+    ],
+    "coat": "פרווה כפולה ועבה, חלקה או מחוספסת, שנושרת הרבה.",
+    "colors": "הכי נפוץ שחור-לבן. יש גם בשלושה צבעים: שחור, חום ולבן, וכמעט בכל צבע אחר.",
+    "temperament": "מלא מרץ ואנרגיה, וחכם מאוד. הוא לומד פקודה חדשה אחרי כמה חזרות בלבד, וזוכר המון מילים. הוא אוהב לעבוד ולקבל משימות, והוא יכול לשמוע הוראות מהקול או משריקה של הרועה, גם ממרחק גדול.",
+    "energy": 5,
+    "history": "הבורדר קולי בא מאזור הגבול בין אנגליה לסקוטלנד, ומשם השם שלו: \"בורדר\" פירושו \"גבול\" באנגלית. הרועים גידלו אותו כדי שיעזור להם לאסוף ולהוביל עדרי כבשים, ובחרו את הכלבים החכמים והחרוצים ביותר, ולא את היפים ביותר.",
+    "funFacts": [
+      "הבורדר קולי נחשב לכלב החכם ביותר בעולם.",
+      "בורדר קולי בשם צ'ייסר הכיר 1,022 מילים, וידע להביא צעצוע לפי השם שלו.",
+      "בשדות תעופה משתמשים בבורדר קולי כדי להרחיק ציפורים מהמסלולים של המטוסים. בישראל הוא עוזר לרעות עדרי צאן ובקר."
+    ],
+    "photo": {
+      "large": "dogs/border-collie.webp",
+      "thumb": "dogs/border-collie-thumb.webp",
+      "width": 1000,
+      "height": 750
+    },
+    "credit": {
+      "file": "Argentine border collie.jpg",
+      "author": "Horacio Cambeiro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argentine_border_collie.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A8%D7%93%D7%A8_%D7%A7%D7%95%D7%9C%D7%99",
+      "https://en.wikipedia.org/wiki/Border_Collie",
+      "https://www.wikidata.org/wiki/Q37710"
+    ]
+  },
+  {
+    "id": "beagle",
+    "qid": "Q21102",
+    "nameHe": "ביגל",
+    "nameEn": "beagle",
+    "origin": [
+      {
+        "nameHe": "הממלכה המאוחדת",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "heightCm": [
+      33,
+      40
+    ],
+    "weightKg": [
+      10,
+      20
+    ],
+    "lifeYears": [
+      11,
+      12.5
+    ],
+    "coat": "פרווה קצרה וקשה.",
+    "colors": "בדרך כלל שלושה צבעים: חום, שחור ולבן. יש גם ביגלים בשני צבעים. החלק התחתון של הרגליים וקצה הזנב לבנים.",
+    "temperament": "שמח, חברותי ונוח. הוא פעלתני וערני, ואוהב להיות עם אנשים. עם זרים הוא קצת מתבייש בהתחלה, אבל מהר מאוד מתיידד. הוא נובח ומיילל בקול רם. ככה הציידים ידעו תמיד איפה הכלבים נמצאים.",
+    "energy": 4,
+    "history": "ביגלים הם כלבי ציד מבריטניה. הם צדו ארנבות בלהקות, ועקבו אחרי הריח עם האף צמוד לאדמה. הגזע של היום פותח בבריטניה בסביבות שנת 1830.",
+    "funFacts": [
+      "סנופי, הכלב המפורסם מהקומיקס, הוא ביגל.",
+      "בזכות האף המצוין שלו, הביגל עובד בשדות תעופה ומחפש אוכל שאסור להכניס לארץ.",
+      "פעם היו ביגלים קטנים כל כך, שקראו להם \"ביגלי כפפה\", כי הם נכנסו לתוך כפפה."
+    ],
+    "photo": {
+      "large": "dogs/beagle.webp",
+      "thumb": "dogs/beagle-thumb.webp",
+      "width": 1000,
+      "height": 665
+    },
+    "credit": {
+      "file": "MiloSmet.JPG",
+      "author": "Jonatan De Geest",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MiloSmet.JPG"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%92%D7%9C",
+      "https://en.wikipedia.org/wiki/Beagle",
+      "https://www.wikidata.org/wiki/Q21102"
+    ]
+  },
+  {
+    "id": "bernese-mountain-dog",
+    "qid": "Q37608",
+    "nameHe": "ברנר זננהונד",
+    "nameEn": "Bernese Mountain Dog",
+    "origin": [
+      {
+        "nameHe": "שווייץ",
+        "flag": "🇨🇭"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "lifeYears": [
+      8,
+      10
+    ],
+    "coat": "פרווה ארוכה, רכה ומבריקה, עם שכבה תחתונה עבה במיוחד. הוא היחיד מבין כלבי ההרים השווייצריים שיש לו פרווה ארוכה.",
+    "colors": "שלושה צבעים: גוף שחור, חזה לבן, וסימנים בצבע חלודה מעל העיניים, בצידי הפה ועל הרגליים. סביב האף יש לו צורה לבנה של פרסת סוס, ועל החזה צלב לבן.",
+    "temperament": "טוב לב, סבלני ואוהב את כל בני המשפחה, וטוב במיוחד עם ילדים. הוא צריך חברה של אנשים והרבה חיבה. כשמתקרב מישהו זר הוא נובח, אבל נרגע מהר. הוא חכם, רוצה לשמח, וקל יחסית לאלף אותו כשמתחילים כשהוא צעיר.",
+    "kids": 5,
+    "history": "הברנר בא מהאלפים בשווייץ, מהאזור של העיר ברן. הוא עבד בחוות: שמר על הבית, הוביל פרות למרעה בהרים, ומשך עגלות עם חלב וגבינה. במאה ה-19 הגזע כמעט נעלם, אבל בשנת 1907 הקימו כמה מגדלים מועדון כדי להציל אותו, והוא הוכר כגזע בשנת 1912.",
+    "funFacts": [
+      "בגלל שהוא משך עגלות של גבינה, האנשים בכפרים קראו לו \"כלב גבינה\".",
+      "השם \"ברנר זננהונד\" פירושו בגרמנית \"כלב מרעה ההרים מברן\".",
+      "לכלב יש לפעמים כתם לבן מאחורי הצוואר, שנקרא \"נשיקה שווייצרית\"."
+    ],
+    "photo": {
+      "large": "dogs/bernese-mountain-dog.webp",
+      "thumb": "dogs/bernese-mountain-dog-thumb.webp",
+      "width": 330,
+      "height": 310
+    },
+    "credit": {
+      "file": "Bouviers Bernois Ganjo.jpg",
+      "author": "Ganjo http://fr.wikipedia.org/wiki/Utilisateur:Ganjo",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bouviers_Bernois_Ganjo.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%A8_%D7%96%D7%A0%D7%A0%D7%94%D7%95%D7%A0%D7%93",
+      "https://en.wikipedia.org/wiki/Bernese_Mountain_Dog",
+      "https://www.wikidata.org/wiki/Q37608"
+    ]
+  },
+  {
+    "id": "golden-retriever",
+    "qid": "Q38686",
+    "nameHe": "גולדן רטריבר",
+    "nameEn": "Golden Retriever",
+    "origin": [
+      {
+        "nameHe": "סקוטלנד שבממלכה המאוחדת",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      54,
+      61
+    ],
+    "weightKg": [
+      25,
+      34
+    ],
+    "lifeYears": [
+      10,
+      13
+    ],
+    "coat": "פרווה כפולה, חלקה או גלית, עם שיער ארוך יותר שנראה כמו נוצות. הפרווה התחתונה צפופה ולא נותנת למים לעבור.",
+    "colors": "כל גוון של זהב או של קרם.",
+    "temperament": "עדין, חכם ומלא אהבה. הוא רגוע, קל מאוד לאלף אותו, והוא רוצה מאוד לשמח את בני המשפחה שלו. הוא סבלני מאוד עם ילדים, אוהב לשחק ולהצטרף לכל פעילות. הוא כל כך ידידותי, שהוא בכלל לא מתאים להיות כלב שמירה.",
+    "energy": 4,
+    "kids": 5,
+    "history": "הגולדן פותח בסקוטלנד במאה ה-19 על ידי לורד בשם דאדלי מרג'וריבנקס. הכל התחיל ב-1864, כשנולד גור צהוב אחד בין גורים שחורים. הלורד קרא לו נוס, ומהגורים שלו התחיל הגזע. הגולדנים עזרו לציידים: הם הביאו להם בפה ציפורים שנפלו, בעדינות ובלי לפצוע אותן.",
+    "funFacts": [
+      "המילה \"רטריבר\" באה מאנגלית, ופירושה \"מחזיר\", כי הכלב הזה מחזיר לבעלים שלו דברים בפה.",
+      "גולדן בשם מקס נבחר לכבוד לראש העיר של עיירה קטנה בקליפורניה!",
+      "במשטרת ישראל יש כלבי גולדן שעוזרים לגלות חומרי נפץ."
+    ],
+    "photo": {
+      "large": "dogs/golden-retriever.webp",
+      "thumb": "dogs/golden-retriever-thumb.webp",
+      "width": 500,
+      "height": 395
+    },
+    "credit": {
+      "file": "Golden Retriever Dukedestiny01 drvd.jpg",
+      "author": "Dukedestiny01.jpg: \"Janneke Vreugdenhil\" derivative work: Anka Friedrich ([[User talk:Ankaaswe Trix Friedrich|talk]])",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dukedestiny01_drvd.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%92%D7%95%D7%9C%D7%93%D7%9F_%D7%A8%D7%98%D7%A8%D7%99%D7%91%D7%A8",
+      "https://en.wikipedia.org/wiki/Golden_Retriever",
+      "https://www.wikidata.org/wiki/Q38686"
+    ]
+  },
+  {
+    "id": "dobermann",
+    "qid": "Q38358",
+    "nameHe": "דוברמן",
+    "nameEn": "Dobermann",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      61,
+      72
+    ],
+    "weightKg": [
+      29.5,
+      41
+    ],
+    "lifeYears": [
+      8,
+      11
+    ],
+    "coat": "פרווה קצרה. מספיק להבריש אותו פעם בשבוע.",
+    "colors": "שחור, חום-אדמדם, כחול-אפור או בז', תמיד עם סימנים בצבע חלודה.",
+    "temperament": "חכם, ערני ונאמן מאוד לבעלים שלו. הוא אמיץ, רגוע, רגיש ושם לב לכל דבר. עם זרים הוא חשדן, אבל בדרך כלל לא יתקוף אם הוא לא מרגיש בסכנה. הוא מלא אנרגיה, וצריך הרבה מקום כדי לרוץ ולשחרר אותה.",
+    "energy": 5,
+    "grooming": 1,
+    "history": "הדוברמן פותח בגרמניה בסביבות שנת 1890 על ידי לואיס דוברמן, שעבד כגובה מסים. הוא רצה כלב נאמן שילך איתו לכל מקום וישמור עליו. לכן הוא שילב כמה גזעים: רוטוויילר, רועה גרמני מהסוג העתיק, פינצ'ר, טרייר וגרייהאונד מהיר.",
+    "funFacts": [
+      "זה הגזע היחיד שנקרא על שם האיש שהמציא אותו.",
+      "הגוף שלו מרובע: הגובה שלו דומה לאורך שלו.",
+      "פעם נהגו לקצץ לדוברמנים את האוזניים והזנב. היום זה אסור ברוב העולם, וגם בישראל."
+    ],
+    "photo": {
+      "large": "dogs/dobermann.webp",
+      "thumb": "dogs/dobermann-thumb.webp",
+      "width": 330,
+      "height": 398
+    },
+    "credit": {
+      "file": "Dobermann Father-and-son.jpg",
+      "author": "Fran Hogan",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dobermann_Father-and-son.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%91%D7%A8%D7%9E%D7%9F_%D7%A4%D7%99%D7%A0%D7%A6'%D7%A8",
+      "https://en.wikipedia.org/wiki/Dobermann",
+      "https://www.wikidata.org/wiki/Q38358"
+    ]
+  },
+  {
+    "id": "dalmatian",
+    "qid": "Q17504",
+    "nameHe": "דלמטי",
+    "nameEn": "Dalmatian",
+    "origin": [
+      {
+        "nameHe": "קרואטיה",
+        "flag": "🇭🇷"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "heightCm": [
+      48,
+      58
+    ],
+    "lifeYears": [
+      10,
+      13
+    ],
+    "coat": "פרווה קצרה, קשה וצפופה.",
+    "colors": "לבן עם נקודות שחורות, ולפעמים עם נקודות חומות. לדלמטי עם נקודות שחורות יש תמיד אף שחור, ולדלמטי עם נקודות חומות יש אף חום.",
+    "temperament": "מלא אנרגיה, וצריך הרבה ריצות ופעילות. הוא סקרן, ממושמע, ובדרך כלל קל לאלף אותו. הוא אוהב ילדים ונאמן לבעלים שלו. הוא רגיל להיות עם אנשים, ולא אוהב להיות לבד הרבה זמן.",
+    "energy": 5,
+    "kids": 5,
+    "history": "השם של הדלמטי בא מדלמטיה, אזור בקרואטיה. כבר בשנת 1375 כתב בישוף על כלב ציד מדלמטיה, עם שיער לבן קצר ונקודות שחורות עגולות. מאוחר יותר הדלמטים רצו ליד כרכרות. בימים שבהם מכבי האש נסעו בעגלות עם סוסים, הדלמטים שמרו על הסוסים. עד היום הדלמטי הוא סמל של מכבי האש, במיוחד בארצות הברית.",
+    "funFacts": [
+      "גורי דלמטי נולדים לבנים לגמרי! הנקודות מתחילות להופיע אחרי כמה ימים.",
+      "הסרט המצויר \"על כלבים וגנבים\" של דיסני, משנת 1961, מספר על משפחה של כלבים דלמטים.",
+      "מרשל, הכבאי מהסדרה \"מפרץ ההרפתקאות\", הוא כלב דלמטי."
+    ],
+    "photo": {
+      "large": "dogs/dalmatian.webp",
+      "thumb": "dogs/dalmatian-thumb.webp",
+      "width": 330,
+      "height": 304
+    },
+    "credit": {
+      "file": "Dalmatien.jpg",
+      "author": "Desaix83, d'après le travail de Le dalmatien",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dalmatien.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%93%D7%9C%D7%9E%D7%98%D7%99",
+      "https://en.wikipedia.org/wiki/Dalmatian_dog",
+      "https://www.wikidata.org/wiki/Q17504"
+    ]
+  },
+  {
+    "id": "great-dane",
+    "qid": "Q5414",
+    "nameHe": "דני ענק",
+    "nameEn": "Great Dane",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "giant"
+    ],
+    "lifeYears": [
+      6,
+      8
+    ],
+    "coat": "פרווה קצרה.",
+    "colors": "חום-זהוב עם \"מסכה\" שחורה על הפנים, מנומר בפסים, שחור, או \"הרלקין\": לבן עם כתמים שחורים גדולים. יש גם דנים בצבעים נוספים.",
+    "history": "למרות השם שלו, הדני הענק בא מגרמניה ולא מדנמרק. בימי הביניים השתמשו באבות שלו כדי לצוד דובים וחזירי בר, והם שמרו על הארמונות של אצילים גרמנים.",
+    "funFacts": [
+      "הדני הענק הוא אחד מגזעי הכלבים הגבוהים ביותר בעולם. זכר בוגר גבוה לפחות 76 סנטימטר, ושוקל לפחות 54 קילו!",
+      "קוראים לו גם \"אפולו של הכלבים\", כי הוא חזק ואלגנטי.",
+      "דני ענק בשם ג'סט נויסנס היה כלב רשמי בצי הבריטי במלחמת העולם השנייה, בבסיס בדרום אפריקה."
+    ],
+    "photo": {
+      "large": "dogs/great-dane.webp",
+      "thumb": "dogs/great-dane-thumb.webp",
+      "width": 330,
+      "height": 321
+    },
+    "credit": {
+      "file": "8675eds win.jpg",
+      "author": "Original uploader was Markovade.pero at sr.wikipedia",
+      "license": "CC BY-SA 3.0 rs",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:8675eds_win.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%93%D7%A0%D7%99_%D7%A2%D7%A0%D7%A7",
+      "https://en.wikipedia.org/wiki/Great_Dane",
+      "https://www.wikidata.org/wiki/Q5414"
+    ]
+  },
+  {
+    "id": "siberian-husky",
+    "qid": "Q39295",
+    "nameHe": "האסקי סיבירי",
+    "nameEn": "Siberian Husky",
+    "origin": [
+      {
+        "nameHe": "סיביר שברוסיה",
+        "flag": "🇷🇺"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "heightCm": [
+      48,
+      61
+    ],
+    "weightKg": [
+      16,
+      27
+    ],
+    "lifeYears": [
+      12,
+      16
+    ],
+    "coat": "פרווה כפולה, עבה יותר מאצל רוב הכלבים: שכבה תחתונה רכה וצפופה, ומעליה שיער ארוך וישר. היא מגינה עליו בקור של עד 60 מעלות מתחת לאפס. הוא משיר פרווה פעמיים בשנה, וצריך להבריש אותו כל שבוע.",
+    "colors": "כל הצבעים, משחור ועד לבן. בדרך כלל לבן עם כתמים שחורים, אפורים או חומים-אדמדמים. העיניים יכולות להיות תכולות או חומות, ולפעמים לכלב אחד יש עין בכל צבע.",
+    "temperament": "חברותי, שליו ואוהב, ומתיידד במיוחד עם ילדים. הוא ערני ומלא אנרגיה, וצריך הרבה פעילות. הוא לא כלב שמירה טוב, כי הוא שקט ולא תוקפני. הוא אוהב לברוח ולרוץ רחוק, ויודע לחפור מתחת לגדר או לקפוץ מעליה.",
+    "energy": 5,
+    "kids": 5,
+    "grooming": 3,
+    "history": "ההאסקי בא מסיביר, אזור קר מאוד ברוסיה. שבט הצ'וקצ'ים גידל אותו כדי שימשוך מזחלות למרחקים ארוכים, בשלג ובקור. לפני יותר ממאה שנה הביאו הרבה כלבי מזחלות כאלה לאלסקה, לעבודה ולמרוצים.",
+    "funFacts": [
+      "במקום לנבוח, ההאסקי בדרך כלל מיילל. יש האסקים שיודעים לחקות צפירה של אמבולנס!",
+      "באנגלית יש ביטוי \"לילה של שלושה כלבים\": לילה כל כך קר, שצריך שלושה כלבים במיטה כדי להתחמם. הביטוי בא מהצ'וקצ'ים ומהכלבים שלהם.",
+      "ההאסקי נחשב לכלב נקי במיוחד, בלי ריח חזק של כלב."
+    ],
+    "photo": {
+      "large": "dogs/siberian-husky.webp",
+      "thumb": "dogs/siberian-husky-thumb.webp",
+      "width": 500,
+      "height": 500
+    },
+    "credit": {
+      "file": "Siberian Husky - Mika.jpg",
+      "author": "ShonMichaeli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siberian_Husky_-_Mika.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A1%D7%A7%D7%99_%D7%A1%D7%99%D7%91%D7%99%D7%A8%D7%99",
+      "https://en.wikipedia.org/wiki/Siberian_Husky",
+      "https://www.wikidata.org/wiki/Q39295"
+    ]
+  },
+  {
+    "id": "welsh-corgi",
+    "qid": "Q858459",
+    "nameHe": "ולש קורגי",
+    "nameEn": "Welsh Corgi",
+    "origin": [
+      {
+        "nameHe": "ויילס שבממלכה המאוחדת",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "weightKg": [
+      11,
+      17
+    ],
+    "lifeYears": [
+      12,
+      15
+    ],
+    "coat": "פרווה כפולה: שכבה תחתונה רכה, ומעליה שיער ארוך יותר.",
+    "colors": "אדום, חום בהיר, שחור, ולפעמים כחול-אפור או מנומר, הרבה פעמים עם סימנים לבנים.",
+    "temperament": "נמרץ, נאמן, עדין וחברותי, ולכן הוא מצוין עם ילדים. הוא ערני וחכם, ובדרך כלל מאופק עם אנשים זרים. הוא נוטה לנבוח בקול רם.",
+    "energy": 4,
+    "kids": 5,
+    "history": "הקורגים עבדו במשך מאות שנים בחוות בוויילס. הם עזרו לרועים להוביל עדרי פרות: הם רצו בין הפרות ונשכו קלות את העקבים של פרות שהתרחקו מהעדר. בזכות הרגליים הקצרות והזריזות שלהם, הם הצליחו לחמוק מהבעיטות. יש שני גזעים של קורגי: פמברוק וקרדיגן, שהופרדו בשנת 1934.",
+    "funFacts": [
+      "השם \"קורגי\" פירושו בוולשית \"כלב גמד\".",
+      "המלכה אליזבת מבריטניה קיבלה את הקורגי הראשון שלה בשנת 1934, ובמשך השנים היו לה יותר מ-30 קורגים!",
+      "לפי אגדה מוויילס, פיות היער רכבו על קורגים, והסימנים על הפרווה שלהם הם מהאוכפים של הפיות."
+    ],
+    "photo": {
+      "large": "dogs/welsh-corgi.webp",
+      "thumb": "dogs/welsh-corgi-thumb.webp",
+      "width": 1000,
+      "height": 1330
+    },
+    "credit": {
+      "file": "Pembroke and Cardigan Welsh Corgi.jpg",
+      "author": "Dog breed facts",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pembroke_and_Cardigan_Welsh_Corgi.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%A9_%D7%A7%D7%95%D7%A8%D7%92%D7%99",
+      "https://en.wikipedia.org/wiki/Welsh_Corgi",
+      "https://www.wikidata.org/wiki/Q858459"
+    ]
+  },
+  {
+    "id": "yorkshire-terrier",
+    "qid": "Q39330",
+    "nameHe": "יורקשייר טרייר",
+    "nameEn": "Yorkshire Terrier",
+    "origin": [
+      {
+        "nameHe": "אנגליה",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "lifeYears": [
+      13,
+      13
+    ],
+    "coat": "שיער ארוך, דק, ישר ומשיי, בלי פרווה תחתונה, ולכן הוא כמעט לא משיר שיער. כשהשיער ארוך צריך להבריש אותו כל יום. הרבה בעלים מספרים אותו קצר, כדי שיהיה קל יותר לטפל בו.",
+    "colors": "על הגוף אפור-פלדה כהה, ועל הראש, החזה והרגליים חום-זהוב.",
+    "temperament": "שובב ומלא אנרגיה. הוא הולך זקוף וגאה, כאילו הוא כלב חשוב מאוד.",
+    "energy": 4,
+    "grooming": 5,
+    "history": "היורקי פותח באמצע המאה ה-19 במחוז יורקשייר באנגליה, ומשם השם שלו. פועלים מסקוטלנד שהגיעו לעבוד במכרות ובמפעלים הביאו איתם כלבי טרייר, ומהם גידלו את הגזע. בהתחלה הוא עזר לתפוס עכברים וחולדות.",
+    "funFacts": [
+      "היורקשייר טרייר שוקל לא יותר מ-3.2 קילו, והוא אחד הכלבים הקטנים בעולם.",
+      "גורי יורקי נולדים שחורים עם כתמים חומים, ולפעמים לוקח להם שלוש שנים ויותר להגיע לצבע של כלב בוגר.",
+      "יורקי בשם סילביה היה הכלב הכי קטן שנמדד אי פעם: הוא היה בגודל של קופסת גפרורים!"
+    ],
+    "photo": {
+      "large": "dogs/yorkshire-terrier.webp",
+      "thumb": "dogs/yorkshire-terrier-thumb.webp",
+      "width": 960,
+      "height": 1280
+    },
+    "credit": {
+      "file": "Imageyorkie.png",
+      "author": "Gandalfelrojo2",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Imageyorkie.png"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%A7%D7%A9%D7%99%D7%99%D7%A8_%D7%98%D7%A8%D7%99%D7%99%D7%A8",
+      "https://en.wikipedia.org/wiki/Yorkshire_Terrier",
+      "https://www.wikidata.org/wiki/Q39330"
+    ]
+  },
+  {
+    "id": "canaan-dog",
+    "qid": "Q38602",
+    "nameHe": "כלב כנעני",
+    "nameEn": "Canaan Dog",
+    "origin": [
+      {
+        "nameHe": "ישראל",
+        "flag": "🇮🇱"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "heightCm": [
+      50,
+      60
+    ],
+    "weightKg": [
+      18,
+      25
+    ],
+    "lifeYears": [
+      16,
+      18
+    ],
+    "coat": "פרווה עבה, קשה וישרה, קצרה או בינונית, שמגינה עליו מחום, מקור ומגשם. הפרווה התחתונה משתנה לפי עונות השנה.",
+    "colors": "חום-זהוב, צבעי חול, אדמדם, קרם, שחור או לבן, בדרך כלל עם סימנים לבנים קטנים. יש גם כנענים מנוקדים, או עם מסכה לבנה או שחורה על הפנים.",
+    "temperament": "נאמן מאוד למשפחה שלו, אבל קצת מרוחק. הוא חכם, ערני ומגיב מהר. הוא שומר על הבית ועל המשפחה שלו, ולכן הוא כלב שמירה מעולה. הוא חושד באנשים זרים, ובדרך כלל לא נותן למי שהוא לא מכיר לגעת בו. הוא אוהב לחפור בורות.",
+    "history": "הכלב הכנעני חי בארץ ישראל כבר מימי התנ\"ך, ורואים כלבים כמוהו בציורי קיר עתיקים. במשך הרבה שנים הכלבים האלה חיו בטבע, בלהקות. בשנת 1934 עלתה לארץ חוקרת בשם רודולפינה מנצל. היא גילתה שהכלבים המקומיים חכמים, קל לאלף אותם, והם מתאימים מאוד לחום ולתנאים הקשים בארץ, והתחילה לגדל אותם ככלבי עבודה.",
+    "funFacts": [
+      "הכלב הכנעני הוא הכלב הגזעי היחיד שמוצאו בארץ ישראל, והוא הכלב הלאומי של ישראל.",
+      "באשקלון מצאו בית קברות עתיק של כ-700 כלבים שדומים מאוד לכלב הכנעני. זה בית הקברות הגדול ביותר לבעלי חיים שנמצא מהעולם העתיק.",
+      "עד היום יש בישראל להקות של כלבים כנעניים שחיים בטבע. בצפון הם כהים יותר, וככל שמדרימים הצבע שלהם בהיר יותר."
+    ],
+    "photo": {
+      "large": "dogs/canaan-dog.webp",
+      "thumb": "dogs/canaan-dog-thumb.webp",
+      "width": 500,
+      "height": 498
+    },
+    "credit": {
+      "file": "CanaanDogChakede1.jpg",
+      "author": "Samorodokhanaana http://www.ruscanaan.ru",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CanaanDogChakede1.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%9B%D7%9C%D7%91_%D7%9B%D7%A0%D7%A2%D7%A0%D7%99",
+      "https://en.wikipedia.org/wiki/Canaan_Dog",
+      "https://www.wikidata.org/wiki/Q38602"
+    ]
+  },
+  {
+    "id": "maltese",
+    "qid": "Q38751",
+    "nameHe": "כלב מלטזי",
+    "nameEn": "Maltese",
+    "origin": [
+      {
+        "nameHe": "איטליה",
+        "flag": "🇮🇹"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      20,
+      23
+    ],
+    "weightKg": [
+      3,
+      4
+    ],
+    "lifeYears": [
+      11,
+      13
+    ],
+    "coat": "שיער ארוך, חלק ומשיי, בלי פרווה תחתונה. הוא לא משיר שיער, והשיער שלו ממשיך לגדול כל הזמן, כמו שיער של בני אדם. צריך להבריש אותו כל יום. הרבה בעלים מספרים אותו קצר, וכך הוא נראה כמו גור.",
+    "colors": "לבן טהור. מותר גם גוון של שנהב.",
+    "temperament": "שובב, ערני ומלא חיבה, וגם רגוע. הוא אוהב תשומת לב ואוהב לשבת בחיק של הבעלים. הוא פעיל מאוד בתוך הבית, ולכן מתאים גם לדירה. ליד ילדים קטנים כדאי להשגיח עליו.",
+    "energy": 3,
+    "kids": 3,
+    "grooming": 5,
+    "history": "המלטזי הוא גזע עתיק מאוד. כנראה סוחרים פיניקים הביאו לאיטליה כלבים כאלה לפני יותר מאלפיים שנה, והשם שלו קשור לאי מלטה. אולי הכלבים האלה היו מהכלבים הראשונים שבני אדם החזיקו רק בשביל החברה שלהם.",
+    "funFacts": [
+      "לכלב המלטזי אין ריח של כלב.",
+      "האף השחור שלו יכול להתבהר כשהוא לא נמצא בשמש, ולהשחיר שוב כשהוא נחשף לשמש.",
+      "בגלל הפרווה הלבנה, רואים אצלו בקלות כתמים כהים של דמעות מתחת לעיניים, ולכן צריך לנקות לו את העיניים כל כמה ימים."
+    ],
+    "photo": {
+      "large": "dogs/maltese.webp",
+      "thumb": "dogs/maltese-thumb.webp",
+      "width": 330,
+      "height": 389
+    },
+    "credit": {
+      "file": "Maltezer Vereniging Belgie.jpg",
+      "author": "Maltezervereniging",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltezer_Vereniging_Belgie.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%9B%D7%9C%D7%91_%D7%9E%D7%9C%D7%98%D7%96%D7%99",
+      "https://en.wikipedia.org/wiki/Maltese_dog",
+      "https://www.wikidata.org/wiki/Q38751"
+    ]
+  },
+  {
+    "id": "labrador-retriever",
+    "qid": "Q38726",
+    "nameHe": "לברדור רטריבר",
+    "nameEn": "Labrador Retriever",
+    "origin": [
+      {
+        "nameHe": "קנדה",
+        "flag": "🇨🇦"
+      },
+      {
+        "nameHe": "הממלכה המאוחדת",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      54,
+      62
+    ],
+    "weightKg": [
+      25,
+      41
+    ],
+    "lifeYears": [
+      13,
+      13
+    ],
+    "coat": "פרווה קצרה, צפופה וישרה, שמגינה עליו מגשם וקור. הוא מחליף פרווה פעמיים בשנה.",
+    "colors": "שחור, חום כמו שוקולד, או צהוב. הצהוב יכול להיות כמעט לבן ועד אדמדם.",
+    "temperament": "ידידותי, רגוע ושמח. הוא אוהב לשחק ולשחות, ומסתדר מצוין עם ילדים ועם מבוגרים. הוא חכם מאוד, וצריך גם ריצות וגם משחקים שמפעילים את הראש. הוא קשור מאוד למשפחה שלו.",
+    "energy": 4,
+    "kids": 5,
+    "history": "האבות של הלברדור חיו באי ניופאונדלנד שבקנדה ועזרו לדייגים: הם קפצו למים והביאו בחזרה דגים שנפלו מהרשתות. לפני כמאתיים שנה הביאו אותם לאנגליה, ושם פיתחו מהם את הגזע. הוא הוכר רשמית כגזע בשנת 1903.",
+    "funFacts": [
+      "יש לו עור דק בין האצבעות וזנב רחב וחזק, ולכן הוא שחיין מצוין.",
+      "הלברדור הוא אחד הכלבים הכי נפוצים בעולם, והרבה לברדורים עובדים ככלבי נחייה לעיוורים.",
+      "באותה המלטה יכולים להיוולד גורים שחורים, חומים וצהובים."
+    ],
+    "photo": {
+      "large": "dogs/labrador-retriever.webp",
+      "thumb": "dogs/labrador-retriever-thumb.webp",
+      "width": 500,
+      "height": 334
+    },
+    "credit": {
+      "file": "Yellow Labrador Retriever 2.jpg",
+      "author": "SixtyWeb",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_Labrador_Retriever_2.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%9C%D7%91%D7%A8%D7%93%D7%95%D7%A8_%D7%A8%D7%98%D7%A8%D7%99%D7%91%D7%A8",
+      "https://en.wikipedia.org/wiki/Labrador_Retriever",
+      "https://www.wikidata.org/wiki/Q38726"
+    ]
+  },
+  {
+    "id": "samoyed",
+    "qid": "Q39002",
+    "nameHe": "סמוייד",
+    "nameEn": "Samoyed",
+    "origin": [
+      {
+        "nameHe": "רוסיה",
+        "flag": "🇷🇺"
+      }
+    ],
+    "size": [
+      "medium"
+    ],
+    "heightCm": [
+      46,
+      56
+    ],
+    "weightKg": [
+      16,
+      30
+    ],
+    "lifeYears": [
+      13,
+      14
+    ],
+    "coat": "פרווה כפולה, עבה ומלאה, שבאופן טבעי דוחה לכלוך. אסור לספר או לגלח אותו, אבל מדי פעם צריך לדלל את הפרווה התחתונה.",
+    "colors": "לבן, קרם, או לבן עם גוון חום בהיר שנקרא \"ביסקוויט\".",
+    "temperament": "חברותי מאוד, גם לאנשים וגם לכלבים אחרים, ומתאים במיוחד לילדים קטנים. הוא חכם, מסור, בטוח בעצמו ומשחק גם כשהוא כבר זקן. הוא גם עקשן, ולכן צריך לאלף אותו בסבלנות מגיל צעיר. הוא צריך הרבה פעילות ותשומת לב, ואם משעמם לו הוא עלול לחפור.",
+    "energy": 5,
+    "kids": 5,
+    "grooming": 4,
+    "history": "הסמוייד נקרא על שם עמים שחיים בטונדרה הקפואה של צפון רוסיה וסיביר. הכלבים עזרו להם לשמור על עדרי איילים, למשוך מזחלות ולהגן מפני חיות טורפות. האנשים התייחסו לכלבים כמו לבני משפחה וחלקו איתם את הבית, ואולי בגלל זה הסמוייד כל כך ידידותי.",
+    "funFacts": [
+      "קוראים לו \"סם המחייך\", כי צורת הפה והעיניים שלו נראית כמו חיוך.",
+      "כלבי סמוייד השתתפו במסעות מחקר לאזורים הקפואים, גם בצפון וגם בדרום כדור הארץ.",
+      "הזנב שלו מסתלסל מעל הגב ונוגע בו."
+    ],
+    "photo": {
+      "large": "dogs/samoyed.webp",
+      "thumb": "dogs/samoyed-thumb.webp",
+      "width": 1000,
+      "height": 1028
+    },
+    "credit": {
+      "file": "Samojed00.jpg",
+      "author": "No machine-readable author provided. Pleple2000 assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samojed00.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A1%D7%9E%D7%95%D7%99%D7%93",
+      "https://en.wikipedia.org/wiki/Samoyed_dog",
+      "https://www.wikidata.org/wiki/Q39002"
+    ]
+  },
+  {
+    "id": "st-bernard",
+    "qid": "Q38090",
+    "nameHe": "סן ברנרד",
+    "nameEn": "St. Bernard",
+    "origin": [
+      {
+        "nameHe": "שווייץ",
+        "flag": "🇨🇭"
+      }
+    ],
+    "size": [
+      "giant"
+    ],
+    "heightCm": [
+      65,
+      90
+    ],
+    "weightKg": [
+      55,
+      90
+    ],
+    "lifeYears": [
+      8,
+      10
+    ],
+    "coat": "פרווה כפולה ועבה. יש סן ברנרד עם פרווה ארוכה ויש עם פרווה קצרה.",
+    "colors": "לבן עם כתמים אדומים או חומים-אדמדמים, קטנים או גדולים. החזה, הכפות וקצה הזנב לבנים.",
+    "temperament": "ענק ועדין. הוא רגוע, סבלני ומתוק עם מבוגרים, ובמיוחד עם ילדים. הוא נאמן ואוהב, ורוצה מאוד לשמח את הבעלים שלו. בגלל שהוא גדל להיות ענק, חשוב ללמד אותו לשמוע בקול כבר כשהוא גור.",
+    "kids": 5,
+    "history": "במעבר הרים גבוה באלפים, בין שווייץ לאיטליה, נזירים הקימו בית מחסה למטיילים. לפני יותר מ-350 שנה הגיעו לשם הכלבים הראשונים. הם עזרו למצוא ולהציל מטיילים שהלכו לאיבוד בשלג ובערפל, והצילו הרבה אנשים. הגזע נקרא על שם המעבר, \"סן ברנאר הגדול\".",
+    "funFacts": [
+      "הכלב המפורסם ביותר מבית המחסה היה בארי, שהציל יותר מ-40 אנשים! עד היום יש שם תמיד כלב שנקרא בארי.",
+      "בית המחסה נמצא בגובה של כמעט 2,500 מטר.",
+      "פעם כלבי הסן ברנרד היו קטנים יותר, בערך בגודל של רועה גרמני."
+    ],
+    "photo": {
+      "large": "dogs/st-bernard.webp",
+      "thumb": "dogs/st-bernard-thumb.webp",
+      "width": 960,
+      "height": 975
+    },
+    "credit": {
+      "file": "Rey nieve.jpg",
+      "author": "Rafael Dominguez Rodriguez",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rey_nieve.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A1%D7%9F_%D7%91%D7%A8%D7%A0%D7%A8%D7%93",
+      "https://en.wikipedia.org/wiki/St._Bernard_(dog_breed)",
+      "https://www.wikidata.org/wiki/Q38090"
+    ]
+  },
+  {
+    "id": "pug",
+    "qid": "Q38698",
+    "nameHe": "פאג",
+    "nameEn": "pug",
+    "origin": [
+      {
+        "nameHe": "סין",
+        "flag": "🇨🇳"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "lifeYears": [
+      8,
+      13
+    ],
+    "coat": "פרווה קצרה, חלקה, רכה ומבריקה. העור שלו מלא קמטים וקפלים, וצריך לנקות אותם פעם בשבוע. הוא משיר שיער בכל עונות השנה.",
+    "colors": "חום בהיר עם פנים שחורות, או שחור. יש גם גוונים של משמש ושל כסף.",
+    "temperament": "ידידותי, שמח ואוהב לשחק. הוא מרגיש את מצב הרוח של הבעלים שלו ורוצה לשמח אותם. קוראים לו \"צל\", כי הוא הולך אחרי הבעלים לכל מקום ואוהב להיות במרכז העניינים. הוא מסתדר טוב עם ילדים ועם מבוגרים.",
+    "kids": 5,
+    "grooming": 3,
+    "history": "הפאג בא מסין, ושם הוא היה כלב של הקיסרים. לפני כ-500 שנה הביאו אותו לאירופה, והוא היה אהוב מאוד על מלכים ומלכות. גם המלכה ויקטוריה מאנגליה אהבה מאוד פאגים.",
+    "funFacts": [
+      "הסיסמה של הגזע היא \"הרבה בתוך מעט\": הרבה כלב בגוף קטן.",
+      "פאג מדבר בשם פרנק מופיע בסרטים \"גברים בשחור\".",
+      "בגלל הפנים השטוחות שלו קשה לו לנשום כשחם, ולכן בימים חמים הוא צריך מקום מוצל וקריר."
+    ],
+    "photo": {
+      "large": "dogs/pug.webp",
+      "thumb": "dogs/pug-thumb.webp",
+      "width": 1000,
+      "height": 874
+    },
+    "credit": {
+      "file": "2.5-year-old fawn male pug.jpg",
+      "author": "Abuk SABUK",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2.5-year-old_fawn_male_pug.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A4%D7%90%D7%92",
+      "https://en.wikipedia.org/wiki/Pug",
+      "https://www.wikidata.org/wiki/Q38698"
+    ]
+  },
+  {
+    "id": "poodle",
+    "qid": "Q38904",
+    "nameHe": "פודל",
+    "nameEn": "poodle",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      },
+      {
+        "nameHe": "צרפת",
+        "flag": "🇫🇷"
+      }
+    ],
+    "size": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "heightCm": [
+      24,
+      62
+    ],
+    "weightKg": [
+      6.5,
+      32
+    ],
+    "lifeYears": [
+      10,
+      18
+    ],
+    "coat": "שכבה אחת של שיער צפוף ומתולתל. הפודל כמעט לא משיר שיער, ולכן צריך לסרק אותו הרבה ולספר אותו כל חודש או חודשיים.",
+    "colors": "הרבה צבעים: לבן, שחור, אפור, חום, כסף, קרם, משמש, אדום ועוד. רוב הפודלים הם בצבע אחד.",
+    "temperament": "חכם מאוד, פעיל וחברותי. הוא לומד מהר טריקים ותרגילים, ומסתדר טוב עם אנשים ועם כלבים אחרים. הוא צריך הרבה פעילות לגוף וגם משחקים שמפעילים את הראש. עם זרים הוא קצת חשדן, אבל עם המשפחה שלו הוא חם ואוהב, ולא אוהב להישאר לבד.",
+    "energy": 4,
+    "grooming": 5,
+    "history": "הפודל פותח כנראה בגרמניה, ככלב שקופץ למים ומביא לציידים ברווזים. השם שלו בא ממילה גרמנית שפירושה \"להשתכשך במים\". למרות זה, בצרפת הוא נחשב לכלב הלאומי. בקרקסים בצרפת גידלו פודלים קטנים יותר, וכך נוצרו הגדלים הקטנים.",
+    "funFacts": [
+      "יש פודלים בארבעה גדלים: ענק (סטנדרטי), בינוני, ננסי וזעיר.",
+      "התספורת המפורסמת של הפודל עזרה לו לשחות: הפונפון בקצה הזנב עזר לו לשמור על שיווי משקל, והשיער על החזה שמר עליו מהמים הקרים.",
+      "הפודל נחשב לאחד הכלבים החכמים בעולם, במקום השני אחרי הבורדר קולי. בקרקס פודלים אפילו הלכו על חבל!"
+    ],
+    "photo": {
+      "large": "dogs/poodle.webp",
+      "thumb": "dogs/poodle-thumb.webp",
+      "width": 1000,
+      "height": 1334
+    },
+    "credit": {
+      "file": "Miniature Poodle (Hungary).jpg",
+      "author": "UszkarFoto92",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miniature_Poodle_(Hungary).jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%93%D7%9C",
+      "https://en.wikipedia.org/wiki/Poodle",
+      "https://www.wikidata.org/wiki/Q38904"
+    ]
+  },
+  {
+    "id": "pomeranian",
+    "qid": "Q39579",
+    "nameHe": "פומרניאן",
+    "nameEn": "Pomeranian",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      19,
+      28
+    ],
+    "weightKg": [
+      1.5,
+      3.2
+    ],
+    "lifeYears": [
+      12,
+      14
+    ],
+    "coat": "פרווה כפולה ושופעת: שכבה תחתונה רכה, ומעליה שיער ארוך, ישר ומחוספס יותר. סביב הצוואר יש לו צווארון של פרווה, והזנב השעיר שלו שוכב על הגב.",
+    "colors": "יש לו יותר צבעים מכל גזע אחר: לבן, שחור, חום, אדום, כתום, קרם, כחול ועוד.",
+    "temperament": "עליז, חביב ואמיץ מאוד, למרות שהוא קטנטן. הוא ערני ושם לב לכל רחש, ולכן הוא שומר מעולה, אבל הוא גם נוטה לנבוח הרבה. הוא עקשן, אבל לומד מהר יחסית לכלבים קטנים אחרים.",
+    "history": "הפומרניאן נקרא על שם אזור פומרניה, על חוף הים הבלטי בצפון גרמניה ופולין. האבות שלו היו כלבי שפיץ גדולים יותר. לפני כ-250 שנה, המלכה שרלוט מבריטניה הביאה שני כלבים כאלה מפומרניה, ומאז הם אהובים על מלכים ומלכות.",
+    "funFacts": [
+      "המלכה ויקטוריה אהבה פומרניאנים קטנים במיוחד, ובזמן חייה הגזע נעשה קטן פי שניים!",
+      "הוא קרוב משפחה קטן של כלבי מזחלות גדולים, כמו הסמוייד וההאסקי.",
+      "בשנת 1888 המלכה ויקטוריה אימצה פומרניאן אדום, ובזכותה הצבע הזה נעשה אופנתי."
+    ],
+    "photo": {
+      "large": "dogs/pomeranian.webp",
+      "thumb": "dogs/pomeranian-thumb.webp",
+      "width": 960,
+      "height": 1216
+    },
+    "credit": {
+      "file": "Померанский шпиц (Pomeranian) 01.jpg",
+      "author": "Novoklimov",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%88%D0%BF%D0%B8%D1%86_(Pomeranian)_01.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%9E%D7%A8%D7%A0%D7%99%D7%90%D7%9F",
+      "https://en.wikipedia.org/wiki/Pomeranian_dog",
+      "https://www.wikidata.org/wiki/Q39579"
+    ]
+  },
+  {
+    "id": "chow-chow",
+    "qid": "Q29013",
+    "nameHe": "צ'או צ'או",
+    "nameEn": "Chow Chow",
+    "origin": [
+      {
+        "nameHe": "סין",
+        "flag": "🇨🇳"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      46,
+      51
+    ],
+    "weightKg": [
+      25,
+      30
+    ],
+    "lifeYears": [
+      12,
+      15
+    ],
+    "coat": "פרווה כפולה, צפופה ועבה מאוד. סביב הצוואר היא עבה במיוחד, ונראית כמו רעמה של אריה.",
+    "colors": "צבע אחד: אדמוני, שחור, כחול-אפור, חום-קינמון או קרם.",
+    "history": "הצ'או צ'או הוא אחד מגזעי הכלבים העתיקים בעולם, והוא בא מסין. בעבר הוא שימש לציד ולשמירה על מקדשים, והסינים גם רתמו אותו למזחלות. הנוסע המפורסם מרקו פולו כתב על זה. בסוף המאה ה-19 הגיע הגזע לאירופה, והמלכה ויקטוריה מבריטניה גידלה כלב כזה.",
+    "funFacts": [
+      "ללשון של הצ'או צ'או יש צבע מיוחד: סגול או כחול-שחור, וגם השפתיים שלו בצבע הזה.",
+      "הרגליים האחוריות שלו ישרות לגמרי, ולכן ההליכה שלו קצת נוקשה.",
+      "לזיגמונד פרויד, הרופא המפורסם, היה צ'או צ'או בשם ג'ופי, שישב איתו בכל הפגישות עם המטופלים."
+    ],
+    "photo": {
+      "large": "dogs/chow-chow.webp",
+      "thumb": "dogs/chow-chow-thumb.webp",
+      "width": 1000,
+      "height": 1250
+    },
+    "credit": {
+      "file": "01 Chow Chow.jpg",
+      "author": "Prayitno/more than 2.5 millions views: thank you!",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Chow_Chow.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A6'%D7%90%D7%95_%D7%A6'%D7%90%D7%95",
+      "https://en.wikipedia.org/wiki/Chow_Chow",
+      "https://www.wikidata.org/wiki/Q29013"
+    ]
+  },
+  {
+    "id": "chihuahua",
+    "qid": "Q653",
+    "nameHe": "צ'יוואווה",
+    "nameEn": "Chihuahua",
+    "origin": [
+      {
+        "nameHe": "מקסיקו",
+        "flag": "🇲🇽"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      15,
+      23
+    ],
+    "weightKg": [
+      1.5,
+      2.5
+    ],
+    "lifeYears": [
+      12,
+      12
+    ],
+    "coat": "יש שני סוגים: צ'יוואווה עם פרווה קצרה וחלקה, וצ'יוואווה עם פרווה ארוכה.",
+    "colors": "כמעט כל צבע וכל דוגמה.",
+    "temperament": "נאמן מאוד לבעלים שלו ושומר עליהם, לפעמים יותר מדי, מפני אנשים זרים וחיות אחרות. הוא סקרן, ומסתגל מהר גם לדירה קטנה בעיר. הוא יכול להיות עקשן, ולא תמיד קל לאלף אותו. הוא אוהב חום, ומעדיף לישון מתחת לשמיכה.",
+    "kids": 2,
+    "history": "הצ'יוואווה הוא כלב ממקסיקו, והוא נקרא על שם מדינת צ'יוואווה שבמקסיקו. האבות שלו היו כנראה כלבים קטנים בשם טצ'יצ'י, שחיו אצל עמים עתיקים במקסיקו. הוא הוכר כגזע רשמי בשנת 1904.",
+    "funFacts": [
+      "הצ'יוואווה הוא גזע הכלבים הכי קטן בעולם.",
+      "יש לו ראש עגול שנראה כמו תפוח, עיניים גדולות ואוזניים גדולות וזקופות.",
+      "על הראש יש לו נקודה רכה, בדיוק כמו אצל תינוקות."
+    ],
+    "photo": {
+      "large": "dogs/chihuahua.webp",
+      "thumb": "dogs/chihuahua-thumb.webp",
+      "width": 330,
+      "height": 287
+    },
+    "credit": {
+      "file": "Chihuahua1 bvdb.jpg",
+      "author": "Bonnie van den Born, http://www.bonfoto.nl. The original uploader was Cwazi at Dutch Wikipedia.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chihuahua1_bvdb.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%95%D7%95%D7%90%D7%95%D7%95%D7%94",
+      "https://en.wikipedia.org/wiki/Chihuahua_(dog_breed)",
+      "https://www.wikidata.org/wiki/Q653"
+    ]
+  },
+  {
+    "id": "cavalier-king-charles-spaniel",
+    "qid": "Q38072",
+    "nameHe": "קבליר קינג צ'ארלס ספנייל",
+    "nameEn": "Cavalier King Charles Spaniel",
+    "origin": [
+      {
+        "nameHe": "הממלכה המאוחדת",
+        "flag": "🇬🇧"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "weightKg": [
+      5.5,
+      8
+    ],
+    "lifeYears": [
+      8,
+      12
+    ],
+    "coat": "פרווה ארוכה, חלקה, מבריקה ורכה כמו משי, בלי תלתלים. על האוזניים, הרגליים והזנב יש לו שיער ארוך שנראה כמו נוצות. הוא משיר שיער.",
+    "colors": "ארבעה צבעים: \"בלנהיים\" (חום ערמוני על לבן), שלושה צבעים (שחור, לבן וחום), שחור עם חום, ו\"רובי\" (אדמדם).",
+    "temperament": "שובב, סבלני ושמח, ורוצה מאוד לשמח את הבעלים שלו. הוא טוב עם ילדים ועם כלבים אחרים, גם גדולים ממנו, וידידותי גם לזרים. הוא לא נובח הרבה, ומסתגל בקלות לחיים בעיר או בכפר. הוא יכול להיות סקרן ושובב, אבל גם לשבת בשקט בחיק.",
+    "kids": 5,
+    "history": "האבות של הקבליר היו ספניאלים קטנים שחיו בארמונות של מלכי אנגליה כבר לפני 500 שנה, ומופיעים בהרבה ציורים של בית המלוכה. המלך צ'ארלס השני אהב אותם מאוד, ולכן הם נקראים על שמו. לפני כמאה שנה ניסו מגדלים להחזיר את המראה של הכלבים מהציורים הישנים, וכך נוצר הקבליר.",
+    "funFacts": [
+      "המלך צ'ארלס השני אהב כל כך לשחק עם הכלבים שלו, שאנשים כתבו שהוא שכח לגמרי מהעבודה שלו.",
+      "לחלק מהקבלירים בצבע \"בלנהיים\" יש נקודה חומה באמצע המצח. לפי אגדה, זו טביעת האגודל של דוכסית, שליטפה כלבה בזמן שחיכתה לבעלה שיחזור מקרב.",
+      "הצבע \"בלנהיים\" נקרא על שם ארמון באנגליה, שבו דוכס גידל ספניאלים אדומים-לבנים שידעו לרוץ ליד סוס."
+    ],
+    "photo": {
+      "large": "dogs/cavalier-king-charles-spaniel.webp",
+      "thumb": "dogs/cavalier-king-charles-spaniel-thumb.webp",
+      "width": 330,
+      "height": 296
+    },
+    "credit": {
+      "file": "CavalierKgChas2 wb.jpg",
+      "author": "en:user:Elf, Ellen Levy Finch",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CavalierKgChas2_wb.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A7%D7%91%D7%9C%D7%99%D7%A8_%D7%A7%D7%99%D7%A0%D7%92_%D7%A6'%D7%90%D7%A8%D7%9C%D7%A1_%D7%A1%D7%A4%D7%A0%D7%99%D7%99%D7%9C",
+      "https://en.wikipedia.org/wiki/Cavalier_King_Charles_Spaniel",
+      "https://www.wikidata.org/wiki/Q38072"
+    ]
+  },
+  {
+    "id": "rottweiler",
+    "qid": "Q39093",
+    "nameHe": "רוטוויילר",
+    "nameEn": "Rottweiler",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      56,
+      69
+    ],
+    "weightKg": [
+      35,
+      60
+    ],
+    "lifeYears": [
+      8,
+      11
+    ],
+    "coat": "פרווה קצרה, ישרה וצפופה. לא צריך לטפל בה הרבה, אבל בעונות מסוימות הוא משיר הרבה שיער.",
+    "colors": "תמיד שחור, עם סימנים בצבע חום-אדמדם על הלחיים, האף, הגרון, החזה והרגליים, ומעל כל עין.",
+    "temperament": "חזק, בטוח בעצמו ושומר על הבית ועל המשפחה שלו. הוא אוהב מאוד את חברת בני האדם, ובמיוחד את הבעלים שלו. עם אנשים זרים הוא חשדן. כדי שיהיה כלב רגוע ונעים, הוא צריך אילוף טוב ויחס טוב.",
+    "history": "האבות של הרוטוויילר הלכו עם הצבא של רומא העתיקה, ועזרו להוביל עדרי פרות ולשמור עליהם. השם שלו בא מהעיר רוטווייל שבגרמניה. שם הוא עבד אצל קצבים: הוביל בקר לשוק ומשך עגלות. כשהגיעו הרכבות, לפני כ-170 שנה, כבר לא היה צורך בעבודה הזאת.",
+    "funFacts": [
+      "הרוטוויילר הוא אחד מגזעי הכלבים העתיקים ביותר שעדיין קיימים.",
+      "בגרמנית קוראים לו \"כלב הקצבים של רוטווייל\".",
+      "היום רוטוויילרים עובדים בחילוץ, בשמירה ובמשטרה, ובמקומות מסוימים עדיין עוזרים לרועים."
+    ],
+    "photo": {
+      "large": "dogs/rottweiler.webp",
+      "thumb": "dogs/rottweiler-thumb.webp",
+      "width": 346,
+      "height": 506
+    },
+    "credit": {
+      "file": "Rottweiler Moletai May 2014.2.jpg",
+      "author": "Томасина",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rottweiler_Moletai_May_2014.2.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%98%D7%95%D7%95%D7%99%D7%99%D7%9C%D7%A8",
+      "https://en.wikipedia.org/wiki/Rottweiler",
+      "https://www.wikidata.org/wiki/Q39093"
+    ]
+  },
+  {
+    "id": "german-shepherd",
+    "qid": "Q38280",
+    "nameHe": "רועה גרמני",
+    "nameEn": "German Shepherd",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "large"
+    ],
+    "heightCm": [
+      55,
+      65
+    ],
+    "lifeYears": [
+      10,
+      11
+    ],
+    "coat": "פרווה כפולה ולא ארוכה.",
+    "colors": "בדרך כלל חום-צהבהב עם כתם שחור גדול על הגב, שנראה כמו אוכף. יש גם רועים גרמנים שחורים לגמרי, או בצבעים של אפור וחום. לפי כללי הגזע, אסור שהפרווה תהיה לבנה.",
+    "temperament": "חכם מאוד, נאמן וצייתן. קל ללמד אותו דברים חדשים, והוא אוהב לקבל משימות. הוא אמיץ ושומר על המשפחה שלו, ובהתחלה הוא חושד באנשים זרים. הוא צריך הרבה פעילות ותשומת לב, ולא אוהב להיות לבד.",
+    "energy": 4,
+    "kids": 4,
+    "history": "הגזע פותח בגרמניה בשנת 1899 על ידי קצין בשם מקס פון שטפניץ. הוא רצה כלב חכם וחזק שיעזור לרועים לשמור על הכבשים. אחר כך התחילו להיעזר ברועה הגרמני גם במשטרה, בצבא ובחילוץ, ובזכות זה הוא התפרסם בכל העולם.",
+    "funFacts": [
+      "רועה גרמני יכול לרוץ מהר מאוד: כמעט 50 קילומטר בשעה!",
+      "לפני יותר ממאה שנה, רועה גרמני בשם רין טין טין היה כוכב קולנוע, ויש לו כוכב משלו בשדרת הכוכבים בהוליווד.",
+      "רועים גרמנים עובדים גם ככלבי נחייה, שעוזרים לאנשים עיוורים ללכת בבטחה."
+    ],
+    "photo": {
+      "large": "dogs/german-shepherd.webp",
+      "thumb": "dogs/german-shepherd-thumb.webp",
+      "width": 960,
+      "height": 768
+    },
+    "credit": {
+      "file": "Pastor aleman a.jpg",
+      "author": "Erick Drumss Hernández",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pastor_aleman_a.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%A2%D7%94_%D7%92%D7%A8%D7%9E%D7%A0%D7%99",
+      "https://en.wikipedia.org/wiki/German_Shepherd",
+      "https://www.wikidata.org/wiki/Q38280"
+    ]
+  },
+  {
+    "id": "shih-tzu",
+    "qid": "Q39357",
+    "nameHe": "שי טסו",
+    "nameEn": "Shih Tzu",
+    "origin": [
+      {
+        "nameHe": "טיבט"
+      },
+      {
+        "nameHe": "סין",
+        "flag": "🇨🇳"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      20,
+      28
+    ],
+    "weightKg": [
+      4,
+      7.5
+    ],
+    "lifeYears": [
+      11,
+      15
+    ],
+    "coat": "פרווה כפולה, ארוכה ורכה, שגולשת לאורך כל הגוף. היא מסתבכת בקלות, ולכן צריך להבריש אותה כל יומיים-שלושה. השיער שלו כמעט לא נושר.",
+    "colors": "הרבה צבעים: לבן, חום, שחור ואפור. הרבה פעמים הוא לבן עם כתמים אפורים.",
+    "temperament": "רגוע, ידידותי ועצמאי, ואוהב מאוד תשומת לב. הוא פעיל ושמח, אבל בגלל הרגליים הקצרות הוא מתעייף מהר בטיולים. הוא נחשב לכלב שמתאים לילדים.",
+    "energy": 3,
+    "kids": 4,
+    "grooming": 5,
+    "history": "השי טסו הוא גזע עתיק מאוד. לפי דעה אחת הוא בא מטיבט, ולפי דעה אחרת הוא פותח בסין. הוא היה הכלב האהוב של משפחת הקיסר בסין, והסינים סירבו למכור אותו. רק בשנת 1928 הביאה אישה אנגלייה שני כלבי שי טסו לאנגליה.",
+    "funFacts": [
+      "השם \"שי טסו\" פירושו \"אריה\".",
+      "קוראים לו גם \"הכלב עם פני החרצית\", כי השיער על הפנים שלו צומח לכל הכיוונים, כמו עלי הכותרת של פרח החרצית.",
+      "בשנת 2023 השי טסו היה הגזע הכי פופולרי בישראל, עם בערך 35 אלף כלבים!"
+    ],
+    "photo": {
+      "large": "dogs/shih-tzu.webp",
+      "thumb": "dogs/shih-tzu-thumb.webp",
+      "width": 500,
+      "height": 752
+    },
+    "credit": {
+      "file": "Shih Tzu portrait show dog.jpg",
+      "author": "danny O.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shih_Tzu_portrait_show_dog.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A9%D7%99_%D7%98%D7%A1%D7%95",
+      "https://en.wikipedia.org/wiki/Shih_Tzu",
+      "https://www.wikidata.org/wiki/Q39357"
+    ]
+  },
+  {
+    "id": "shiba-inu",
+    "qid": "Q39315",
+    "nameHe": "שיבה אינו",
+    "nameEn": "Shiba Inu",
+    "origin": [
+      {
+        "nameHe": "יפן",
+        "flag": "🇯🇵"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      35,
+      41
+    ],
+    "weightKg": [
+      8,
+      10
+    ],
+    "lifeYears": [
+      14.5,
+      15.5
+    ],
+    "coat": "פרווה כפולה וצפופה.",
+    "colors": "ג'ינג'י, \"שומשום\" (שיער עם קצוות שחורים), או שחור עם חום. בכל הצבעים יש פרווה לבנה-קרם על הלחיים, הגרון, החזה, הבטן והצד הפנימי של הרגליים.",
+    "temperament": "ערני, אוהב ועצמאי. הוא חכם מאוד, אבל גם עקשן ויודע מה הוא רוצה. בגלל שהוא כל כך חכם, הוא צריך הרבה פעילות.",
+    "energy": 4,
+    "history": "השיבה הוא אחד מגזעי הכלבים העתיקים בעולם. ביפן מצאו עצמות של כלבים דומים לו מלפני יותר מ-3,000 שנה. הוא עזר לציידים בהרים למצוא ציפורים וארנבות בין השיחים. לפני כמאה שנה הגזע כמעט נעלם, ואנשים ביפן עבדו קשה כדי להציל אותו. בשנת 1937 הוא הוכרז ביפן כ\"נכס לאומי\".",
+    "funFacts": [
+      "\"אינו\" פירושו \"כלב\" ביפנית, ו\"שיבה\" פירושו כנראה \"שיחים קטנים\", כי הוא התרוצץ בין השיחים בזמן הציד.",
+      "הוא הקטן מבין שישת גזעי הכלבים העתיקים של יפן.",
+      "שיבה בשם קבוסו התפרסמה בכל העולם בזכות תמונה מצחיקה באינטרנט שנקראת \"דוג\"."
+    ],
+    "photo": {
+      "large": "dogs/shiba-inu.webp",
+      "thumb": "dogs/shiba-inu-thumb.webp",
+      "width": 1000,
+      "height": 1178
+    },
+    "credit": {
+      "file": "Shiba inu taiki.jpg",
+      "author": "Roberto Vasarri",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiba_inu_taiki.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%A9%D7%99%D7%91%D7%94_%D7%90%D7%99%D7%A0%D7%95",
+      "https://en.wikipedia.org/wiki/Shiba_Inu",
+      "https://www.wikidata.org/wiki/Q39315"
+    ]
+  },
+  {
+    "id": "dachshund",
+    "qid": "Q29099",
+    "nameHe": "תחש",
+    "nameEn": "dachshund",
+    "origin": [
+      {
+        "nameHe": "גרמניה",
+        "flag": "🇩🇪"
+      }
+    ],
+    "size": [
+      "small"
+    ],
+    "heightCm": [
+      20,
+      23
+    ],
+    "weightKg": [
+      7,
+      14.5
+    ],
+    "lifeYears": [
+      11.5,
+      14
+    ],
+    "coat": "יש שלושה סוגים: פרווה קצרה וחלקה, פרווה ארוכה ומשיית, ופרווה קשה כמו חוטים.",
+    "colors": "הצבע הנפוץ ביותר הוא חום-אדמדם. יש גם תחשים בצבע קרם, שחור וחום, שוקולד וחום, ועוד הרבה צבעים ודוגמאות.",
+    "temperament": "ידידותי, זריז ונאמן מאוד לבעלים שלו. הוא אוהב ללמוד פקודות חדשות, אבל הוא גם עקשן, ולכן לא תמיד קל לאלף אותו. הוא אוהב לרדוף אחרי חיות קטנות, וחושד קצת באנשים זרים. הוא צריך הרבה פעילות, והנביחה שלו חזקה.",
+    "energy": 4,
+    "kids": 4,
+    "history": "התחש פותח בגרמניה לפני כמה מאות שנים כדי לצוד גיריות, חיות שגרות במחילות מתחת לאדמה. בזכות הגוף הארוך והרגליים הקצרות, הוא יכול להיכנס למחילות צרות. המלכה ויקטוריה מבריטניה אהבה מאוד כלבי תחש.",
+    "funFacts": [
+      "קוראים לו גם \"כלב נקניק\" בגלל הגוף הארוך שלו.",
+      "הכפות הקדמיות שלו גדולות ונראות כמו משוטים, והן מעולות לחפירה.",
+      "יש גם תחשים ננסיים, קטנים עוד יותר. בגרמניה יש אפילו גודל שנקרא \"ארנב\"."
+    ],
+    "photo": {
+      "large": "dogs/dachshund.webp",
+      "thumb": "dogs/dachshund-thumb.webp",
+      "width": 330,
+      "height": 222
+    },
+    "credit": {
+      "file": "MiniDachshund1 wb.jpg",
+      "author": "Ellen Levy Finch (Elf)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MiniDachshund1_wb.jpg"
+    },
+    "sources": [
+      "https://he.wikipedia.org/wiki/%D7%AA%D7%97%D7%A9_(%D7%9B%D7%9C%D7%91)",
+      "https://en.wikipedia.org/wiki/Dachshund",
+      "https://www.wikidata.org/wiki/Q29099"
+    ]
+  }
+]

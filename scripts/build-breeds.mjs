@@ -139,8 +139,8 @@ async function wikitexts(lang, titles) {
 // Pick the largest standard width the original can provide, preferring >= 960px.
 const STANDARD_WIDTHS = [1280, 960, 500, 330]
 
-function thumbUrl(ii) {
-  const width = STANDARD_WIDTHS.find((w) => w < ii.width) ?? STANDARD_WIDTHS.at(-1)
+function thumbUrl(ii, maxWidth = Infinity) {
+  const width = STANDARD_WIDTHS.find((w) => w < ii.width && w <= maxWidth) ?? STANDARD_WIDTHS.at(-1)
   // https://upload.wikimedia.org/wikipedia/commons/a/ab/Name.jpg
   //   -> https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Name.jpg/960px-Name.jpg
   const m = ii.url.match(/^(https:\/\/upload\.wikimedia\.org\/wikipedia\/commons)\/(\w\/\w\w)\/([^/?]+)/)
@@ -329,11 +329,13 @@ async function photos(slugs) {
       const ii = page.imageinfo?.[0]
       if (!ii) continue
       const license = stripHtml(ii.extmetadata?.LicenseShortName?.value)
-      if (!FREE_LICENSE.test(license) || ii.width < 800) continue
+      // only photos big enough for the ~1000px large version
+      if (!FREE_LICENSE.test(license) || ii.width < 1000) continue
       const preview = path.join(dir, `${String(++n).padStart(2, '0')}.jpg`)
-      const buf = await downloadPhoto(ii)
-      await sharp(buf).rotate().resize({ width: 400 }).jpeg().toFile(preview)
-      console.log(`  ${path.basename(preview)}  ${ii.width}×${ii.height}  ${license}  "${file}"`)
+      const buf = await getBinary(thumbUrl(ii, 330))
+      await sharp(buf).rotate().jpeg().toFile(preview)
+      const author = stripHtml(ii.extmetadata?.Artist?.value).slice(0, 40)
+      console.log(`  ${path.basename(preview)}  ${ii.width}×${ii.height}  ${license}  ${author}  "${file}"`)
     }
   }
 }
