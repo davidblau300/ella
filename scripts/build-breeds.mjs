@@ -163,7 +163,7 @@ function thumbUrl(ii, maxWidth = Infinity) {
   const m = ii.url.match(/^(https:\/\/upload\.wikimedia\.org\/wikipedia\/commons)\/(\w\/\w\w)\/([^/?]+)/)
   if (!m) throw new Error(`Unexpected Commons URL ${ii.url}`)
   const [, base, hash, name] = m
-  const ext = /\.(tiff?|webp)$/i.test(name) ? '.jpg' : ''
+  const ext = /\.tiff?$/i.test(name) ? '.jpg' : ''
   return `${base}/thumb/${hash}/${name}/${width}px-${name}${ext}`
 }
 
@@ -352,8 +352,13 @@ async function photos(slugs) {
       if (!FREE_LICENSE.test(license) || ii.width < 1000) continue
       if (n >= MAX_PREVIEWS) break
       const preview = path.join(dir, `${String(++n).padStart(2, '0')}.jpg`)
-      const buf = await getBinary(thumbUrl(ii, 330))
-      await sharp(buf).rotate().jpeg().toFile(preview)
+      try {
+        await sharp(await getBinary(thumbUrl(ii, 330))).rotate().jpeg().toFile(preview)
+      } catch (err) {
+        console.warn(`  ! preview failed for "${file}": ${err.message}`)
+        n--
+        continue
+      }
       const author = stripHtml(ii.extmetadata?.Artist?.value).slice(0, 40)
       console.log(`  ${path.basename(preview)}  ${ii.width}×${ii.height}  ${license}  ${author}  "${file}"`)
     }

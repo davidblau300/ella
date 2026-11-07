@@ -143,14 +143,14 @@ export const breeds: Breed[] = [
       "large": "dogs/french-bulldog.webp",
       "thumb": "dogs/french-bulldog-thumb.webp",
       "width": 1000,
-      "height": 666
+      "height": 1379
     },
     "credit": {
-      "file": "Французские бульдоги 2013-09-02 11-36.JPG",
-      "author": "User:Frosya a",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%81%D0%BA%D0%B8%D0%B5_%D0%B1%D1%83%D0%BB%D1%8C%D0%B4%D0%BE%D0%B3%D0%B8_2013-09-02_11-36.JPG"
+      "file": "A French Bulldog.jpg",
+      "author": "Matt Wunderle",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_French_Bulldog.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%9C%D7%93%D7%95%D7%92_%D7%A6%D7%A8%D7%A4%D7%AA%D7%99",
@@ -198,15 +198,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/boxer.webp",
       "thumb": "dogs/boxer-thumb.webp",
-      "width": 500,
-      "height": 408
+      "width": 1000,
+      "height": 1301
     },
     "credit": {
-      "file": "Boxer female brown.jpg",
-      "author": "Flickr user boxercab",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boxer_female_brown.jpg"
+      "file": "Bokser portret.jpg",
+      "author": "Pleple2000",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bokser_portret.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A7%D7%A1%D7%A8_(%D7%9B%D7%9C%D7%91)",
@@ -347,15 +347,14 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/bernese-mountain-dog.webp",
       "thumb": "dogs/bernese-mountain-dog-thumb.webp",
-      "width": 330,
-      "height": 310
+      "width": 1000,
+      "height": 806
     },
     "credit": {
-      "file": "Bouviers Bernois Ganjo.jpg",
-      "author": "Ganjo http://fr.wikipedia.org/wiki/Utilisateur:Ganjo",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bouviers_Bernois_Ganjo.jpg"
+      "file": "Minelanda Moon Russia.JPG",
+      "author": "Pavel Antonoff",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minelanda_Moon_Russia.JPG"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%A8_%D7%96%D7%A0%D7%A0%D7%94%D7%95%D7%A0%D7%93",
@@ -403,14 +402,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/golden-retriever.webp",
       "thumb": "dogs/golden-retriever-thumb.webp",
-      "width": 500,
-      "height": 395
+      "width": 1000,
+      "height": 666
     },
     "credit": {
-      "file": "Golden Retriever Dukedestiny01 drvd.jpg",
-      "author": "Dukedestiny01.jpg: \"Janneke Vreugdenhil\" derivative work: Anka Friedrich ([[User talk:Ankaaswe Trix Friedrich|talk]])",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dukedestiny01_drvd.jpg"
+      "file": "At Sticker Lumis Golden.JPG",
+      "author": "Marlies Kloet",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:At_Sticker_Lumis_Golden.JPG"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%92%D7%95%D7%9C%D7%93%D7%9F_%D7%A8%D7%98%D7%A8%D7%99%D7%91%D7%A8",
@@ -458,15 +458,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/dobermann.webp",
       "thumb": "dogs/dobermann-thumb.webp",
-      "width": 330,
-      "height": 398
+      "width": 1000,
+      "height": 650
     },
     "credit": {
-      "file": "Dobermann Father-and-son.jpg",
-      "author": "Fran Hogan",
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dobermann_Father-and-son.jpg"
+      "file": "Jean Dark Snö of Sweden.jpg",
+      "author": "Felill",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Dark_Sn%C3%B6_of_Sweden.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%91%D7%A8%D7%9E%D7%9F_%D7%A4%D7%99%D7%A0%D7%A6'%D7%A8",
@@ -510,15 +510,14 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/dalmatian.webp",
       "thumb": "dogs/dalmatian-thumb.webp",
-      "width": 330,
-      "height": 304
+      "width": 1000,
+      "height": 727
     },
     "credit": {
-      "file": "Dalmatien.jpg",
-      "author": "Desaix83, d'après le travail de Le dalmatien",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dalmatien.jpg"
+      "file": "Female dalmatian head shot.jpg",
+      "author": "Mllefantine at English Wikipedia",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Female_dalmatian_head_shot.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%93%D7%9C%D7%9E%D7%98%D7%99",
@@ -555,15 +554,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/great-dane.webp",
       "thumb": "dogs/great-dane-thumb.webp",
-      "width": 330,
-      "height": 321
+      "width": 1000,
+      "height": 970
     },
     "credit": {
-      "file": "8675eds win.jpg",
-      "author": "Original uploader was Markovade.pero at sr.wikipedia",
-      "license": "CC BY-SA 3.0 rs",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:8675eds_win.jpg"
+      "file": "Dog niemiecki żółty LM980.jpg",
+      "author": "Lilly M",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_niemiecki_%C5%BC%C3%B3%C5%82ty_LM980.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%93%D7%A0%D7%99_%D7%A2%D7%A0%D7%A7",
@@ -612,15 +611,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/siberian-husky.webp",
       "thumb": "dogs/siberian-husky-thumb.webp",
-      "width": 500,
-      "height": 500
+      "width": 1000,
+      "height": 669
     },
     "credit": {
-      "file": "Siberian Husky - Mika.jpg",
-      "author": "ShonMichaeli",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siberian_Husky_-_Mika.jpg"
+      "file": "Siberian Husky sable.jpg",
+      "author": "Original photo taken by Flickr user Sue and Marty. Edited by Pharaoh Hound",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siberian_Husky_sable.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A1%D7%A7%D7%99_%D7%A1%D7%99%D7%91%D7%99%D7%A8%D7%99",
@@ -665,14 +664,14 @@ export const breeds: Breed[] = [
       "large": "dogs/welsh-corgi.webp",
       "thumb": "dogs/welsh-corgi-thumb.webp",
       "width": 1000,
-      "height": 1330
+      "height": 1052
     },
     "credit": {
-      "file": "Pembroke and Cardigan Welsh Corgi.jpg",
-      "author": "Dog breed facts",
+      "file": "14 year old Corgi.jpg",
+      "author": "Nglengna",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pembroke_and_Cardigan_Welsh_Corgi.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:14_year_old_Corgi.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%A9_%D7%A7%D7%95%D7%A8%D7%92%D7%99",
@@ -766,15 +765,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/canaan-dog.webp",
       "thumb": "dogs/canaan-dog-thumb.webp",
-      "width": 500,
-      "height": 498
+      "width": 1000,
+      "height": 1255
     },
     "credit": {
-      "file": "CanaanDogChakede1.jpg",
-      "author": "Samorodokhanaana http://www.ruscanaan.ru",
+      "file": "CanaanDogFace.jpg",
+      "author": "Arikk",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CanaanDogChakede1.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CanaanDogFace.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%9B%D7%9C%D7%91_%D7%9B%D7%A0%D7%A2%D7%A0%D7%99",
@@ -823,14 +822,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/maltese.webp",
       "thumb": "dogs/maltese-thumb.webp",
-      "width": 330,
-      "height": 389
+      "width": 960,
+      "height": 1440
     },
     "credit": {
-      "file": "Maltezer Vereniging Belgie.jpg",
-      "author": "Maltezervereniging",
-      "license": "Public domain",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maltezer_Vereniging_Belgie.jpg"
+      "file": "1AKC Maltese Dog Show 2011.jpg",
+      "author": "SheltieBoy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1AKC_Maltese_Dog_Show_2011.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%9B%D7%9C%D7%91_%D7%9E%D7%9C%D7%98%D7%96%D7%99",
@@ -882,15 +882,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/labrador-retriever.webp",
       "thumb": "dogs/labrador-retriever-thumb.webp",
-      "width": 500,
-      "height": 334
+      "width": 1000,
+      "height": 750
     },
     "credit": {
-      "file": "Yellow Labrador Retriever 2.jpg",
-      "author": "SixtyWeb",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_Labrador_Retriever_2.jpg"
+      "file": "Labrador Retriever running water.jpg",
+      "author": "Flickr user redjar",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labrador_Retriever_running_water.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%9C%D7%91%D7%A8%D7%93%D7%95%D7%A8_%D7%A8%D7%98%D7%A8%D7%99%D7%91%D7%A8",
@@ -944,7 +944,7 @@ export const breeds: Breed[] = [
     },
     "credit": {
       "file": "Samojed00.jpg",
-      "author": "No machine-readable author provided. Pleple2000 assumed (based on copyright claims).",
+      "author": "Pleple2000",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samojed00.jpg"
@@ -1158,15 +1158,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/pomeranian.webp",
       "thumb": "dogs/pomeranian-thumb.webp",
-      "width": 960,
-      "height": 1216
+      "width": 1000,
+      "height": 734
     },
     "credit": {
-      "file": "Померанский шпиц (Pomeranian) 01.jpg",
-      "author": "Novoklimov",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BC%D0%B5%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%88%D0%BF%D0%B8%D1%86_(Pomeranian)_01.jpg"
+      "file": "Pomeranian orange-sable Coco.jpg",
+      "author": "Rob Hanson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pomeranian_orange-sable_Coco.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%9E%D7%A8%D7%A0%D7%99%D7%90%D7%9F",
@@ -1216,7 +1216,7 @@ export const breeds: Breed[] = [
     },
     "credit": {
       "file": "01 Chow Chow.jpg",
-      "author": "Prayitno/more than 2.5 millions views: thank you!",
+      "author": "Prayitno",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:01_Chow_Chow.jpg"
@@ -1266,15 +1266,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/chihuahua.webp",
       "thumb": "dogs/chihuahua-thumb.webp",
-      "width": 330,
-      "height": 287
+      "width": 1000,
+      "height": 750
     },
     "credit": {
-      "file": "Chihuahua1 bvdb.jpg",
-      "author": "Bonnie van den Born, http://www.bonfoto.nl. The original uploader was Cwazi at Dutch Wikipedia.",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chihuahua1_bvdb.jpg"
+      "file": "Ray agaver.jpg",
+      "author": "Noam machlev",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ray_agaver.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%95%D7%95%D7%90%D7%95%D7%95%D7%94",
@@ -1317,15 +1317,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/cavalier-king-charles-spaniel.webp",
       "thumb": "dogs/cavalier-king-charles-spaniel-thumb.webp",
-      "width": 330,
-      "height": 296
+      "width": 1000,
+      "height": 648
     },
     "credit": {
-      "file": "CavalierKgChas2 wb.jpg",
-      "author": "en:user:Elf, Ellen Levy Finch",
+      "file": "Cavalier king charles spaniel k90.jpg",
+      "author": "Przykuta",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CavalierKgChas2_wb.jpg"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cavalier_king_charles_spaniel_k90.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%A7%D7%91%D7%9C%D7%99%D7%A8_%D7%A7%D7%99%D7%A0%D7%92_%D7%A6'%D7%90%D7%A8%D7%9C%D7%A1_%D7%A1%D7%A4%D7%A0%D7%99%D7%99%D7%9C",
@@ -1371,15 +1371,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/rottweiler.webp",
       "thumb": "dogs/rottweiler-thumb.webp",
-      "width": 346,
-      "height": 506
+      "width": 960,
+      "height": 730
     },
     "credit": {
-      "file": "Rottweiler Moletai May 2014.2.jpg",
-      "author": "Томасина",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rottweiler_Moletai_May_2014.2.jpg"
+      "file": "Rottweiler standing facing left.jpg",
+      "author": "Dr. Manfred Herrmann Allgemeiner Deutscher Rottweiler-Klub (ADRK) e.V",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rottweiler_standing_facing_left.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%98%D7%95%D7%95%D7%99%D7%99%D7%9C%D7%A8",
@@ -1488,7 +1488,7 @@ export const breeds: Breed[] = [
     },
     "credit": {
       "file": "Shih Tzu portrait show dog.jpg",
-      "author": "danny O.",
+      "author": "danny O",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shih_Tzu_portrait_show_dog.jpg"
@@ -1593,15 +1593,15 @@ export const breeds: Breed[] = [
     "photo": {
       "large": "dogs/dachshund.webp",
       "thumb": "dogs/dachshund-thumb.webp",
-      "width": 330,
-      "height": 222
+      "width": 1000,
+      "height": 652
     },
     "credit": {
-      "file": "MiniDachshund1 wb.jpg",
-      "author": "Ellen Levy Finch (Elf)",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MiniDachshund1_wb.jpg"
+      "file": "Jamnik długowłosy standardowy LM 671.jpg",
+      "author": "Lilly M",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jamnik_d%C5%82ugow%C5%82osy_standardowy_LM_671.jpg"
     },
     "sources": [
       "https://he.wikipedia.org/wiki/%D7%AA%D7%97%D7%A9_(%D7%9B%D7%9C%D7%91)",
