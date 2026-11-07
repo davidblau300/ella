@@ -38,6 +38,23 @@ const stripHtml = (s = '') =>
   s.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#039;/g, "'")
     .replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim()
 
+/** Turn Commons "Artist" metadata into a short readable credit. */
+function cleanAuthor(raw) {
+  let a = stripHtml(raw)
+  const assumed = a.match(/No machine-readable author provided\.\s*(.+?) assumed/i)
+  if (assumed) a = assumed[1]
+  const uploader = a.match(/^Original uploader was (.+?) at \S+$/i)
+  if (uploader) a = uploader[1]
+  return a
+    .replace(/\[\[[^\]]*\]\]/g, '')
+    .replace(/\(\s*\|?\s*talk\s*\)|\(\s*\)/gi, '')
+    .replace(/https?:\/\/\S+/g, '')
+    .replace(/\b(?:[a-z]{2}:)?user:/gi, '')
+    .replace(/\s*[.,;]\s*$/, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 async function readBatches() {
   const files = (await readdir(BATCH_DIR)).filter((f) => f.endsWith('.json')).sort()
   const breeds = []
@@ -279,7 +296,7 @@ async function build() {
       photo: { large: `dogs/${b.slug}.webp`, thumb: `dogs/${b.slug}-thumb.webp`, ...dims },
       credit: clean({
         file: b.photoFile,
-        author: stripHtml(md.Artist?.value) || stripHtml(md.Credit?.value) || 'לא צוין',
+        author: c.photoAuthor ?? (cleanAuthor(md.Artist?.value) || cleanAuthor(md.Credit?.value) || 'לא צוין'),
         license,
         licenseUrl: md.LicenseUrl?.value,
         sourceUrl: ii.descriptionurl,
@@ -304,6 +321,8 @@ function clean(obj) {
 }
 
 // ---------------------------------------------------------------- photo candidates
+const MAX_PREVIEWS = 5
+
 async function photos(slugs) {
   const breeds = (await readBatches()).filter((b) => slugs.includes(b.slug))
   if (!breeds.length) throw new Error('Give one or more slugs from scripts/batches/')
@@ -331,6 +350,7 @@ async function photos(slugs) {
       const license = stripHtml(ii.extmetadata?.LicenseShortName?.value)
       // only photos big enough for the ~1000px large version
       if (!FREE_LICENSE.test(license) || ii.width < 1000) continue
+      if (n >= MAX_PREVIEWS) break
       const preview = path.join(dir, `${String(++n).padStart(2, '0')}.jpg`)
       const buf = await getBinary(thumbUrl(ii, 330))
       await sharp(buf).rotate().jpeg().toFile(preview)

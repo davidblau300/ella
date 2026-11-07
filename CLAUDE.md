@@ -96,6 +96,7 @@ an IP-wide 429 lasting 10 minutes.
      "nameHe": "only if the Wikidata Hebrew label is not the right display name",
      "origin": [{ "nameHe": "גרמניה", "flag": "🇩🇪" }],
      "photo": "File name on Commons, to override the Wikidata image",
+     "photoAuthor": "only if the cleaned-up Commons author text is unreadable",
      "thumbCrop": { "x": 0.3, "y": 0.35, "size": 0.8 },
      "size": "small | medium | large | giant, or an array",
      "heightCm": [55, 65], "weightKg": [22, 40], "lifeYears": [10, 13],
